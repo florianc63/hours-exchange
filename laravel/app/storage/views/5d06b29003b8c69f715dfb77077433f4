@@ -1,0 +1,36 @@
+
+<?php /*  Web site Title  */ ?>
+<?php $__env->startSection('title'); ?>
+@parent
+Offers
+<?php $__env->stopSection(); ?>
+
+<?php /*  Content  */ ?>
+<?php $__env->startSection('content'); ?>
+ 
+	<h2>Offers</h2>
+ 	
+	<?php foreach ($entries as $entry): ?>
+	
+		<div class="row">
+			<div class="col-lg-3">
+				<?php if ($entry->image != ''): ?>
+					<img src="<?php echo e($entry->image); ?>" width="220"/>
+				<?php else: ?>
+					<img src="<?php echo asset('assets/img/hx-logo-small.png'); ?>" width="55"/>
+				<?php endif; ?>
+			</div>
+			<div class="col-lg-9">
+				<h3><a href="<?php echo e(URL::route('offer', $entry->slug)); ?>"><?php echo e($entry->title); ?></a> <small>(<?php echo e($entry->price); ?> hours)</small></h3>
+				<h5>Posted at <?php echo Carbon\Carbon::createFromTimestamp(strtotime($entry->created_at))->toFormattedDateString(); ?> &bull; by <?php echo e($entry->author->first_name); ?> <?php echo e($entry->author->last_name); ?></h5>
+				<p>Service type: <strong><?php echo e($entry->service->name); ?></strong></p>
+				<p>Available: <strong><?php echo e($entry->qty); ?></strong></p>
+				<?php echo e(Str::limit($entry->body, 100)); ?>
+			</div>
+		</div>
+	<?php endforeach; ?>
+		
+	<?php echo $entries->addQuery('order',$order)->addQuery('sort', $sort)->links(); ?>
+ 
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

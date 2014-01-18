@@ -1,0 +1,112 @@
+
+<?php /*  Web site Title  */ ?>
+<?php $__env->startSection('title'); ?>
+@parent
+Edit member details
+<?php $__env->stopSection(); ?>
+
+<?php /*  Content  */ ?>
+<?php $__env->startSection('content'); ?>
+ 
+    <h1>Edit Member Details</h1>
+ 
+    <?php echo Form::model($user_details, array('method' => 'put', 'route' => array('admin.userdetails.update', $user_details->id), 'class' => 'form-horizontal')); ?>
+ 
+        <div class="form-group">
+            <?php echo Form::label('first_name', 'First Name', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('first_name', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('first_name') ? $errors->first('first_name', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+        <div class="form-group">
+            <?php echo Form::label('last_name', 'Last Name', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('last_name', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('last_name') ? $errors->first('last_name', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+        <div class="form-group">
+            <?php echo Form::label('mobile', 'Mobile', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('mobile', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('mobile') ? $errors->first('mobile', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>		
+        <div class="form-group">
+            <?php echo Form::label('address', 'Address', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('address', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('address') ? $errors->first('address', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+        <div class="form-group">
+            <?php echo Form::label('city', 'City', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('city', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('city') ? $errors->first('city', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+        <div class="form-group">
+            <?php echo Form::label('province', 'Province', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('province', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('province') ? $errors->first('province', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+        <div class="form-group">
+            <?php echo Form::label('postal', 'Postal', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('postal', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('postal') ? $errors->first('postal', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+        <div class="form-group">
+            <?php echo Form::label('country', 'Country', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('country', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('country') ? $errors->first('country', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+        <div class="form-group">
+            <?php echo Form::label('linkedin', 'LinkedIn Profile', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::text('linkedin', null, array('class' => 'form-control')); ?>
+				<?php echo ($errors->has('linkedin') ? $errors->first('linkedin', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+        <div class="form-group">
+            <?php echo Form::label('job_status', 'I am currently', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-10">
+				<?php echo Form::select('job_status', array('employed', 'job seeker', 'student'), null, array('class' => 'form-control'));; ?>
+				<?php echo ($errors->has('job_status') ? $errors->first('job_status', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>		
+		<div class="form-group">
+            <?php echo Form::label('services[]', 'Which services would you be willing to offer?', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-6">
+				<?php echo Form::select('services[]', Service::orderBy('name', 'asc')->lists('name', 'id'), $user->services->lists('id'), array('multiple', 'style' => 'height: 200px', 'class' => 'form-control'));; ?>
+				<p>For multiple selection in the list above, press and hold Ctrl key (or Command for Mac users)<br/></p>
+				<?php echo ($errors->has('services') ? $errors->first('services', '<span class="input-error">:message</span>') : ''); ?>
+			</div>
+        </div>
+		 
+		<div class="form-group">
+            <?php echo Form::label('descr', 'Something about yourself', array('class' => 'col-lg-2 control-label')); ?>
+			<div class="col-lg-6">
+				<?php echo Form::textarea('descr', null, array('rows' => 3, 'class' => 'form-control')); ?>
+				<?php echo ($errors->has('descr') ? $errors->first('descr', '<span class="input-error block">:message</span>') : ''); ?>
+			</div>
+        </div>	 
+ 
+		<div class="form-group">
+			<div class="col-lg-offset-2 col-lg-10">
+				<?php echo Form::submit('Save', array('class' => 'btn btn-success btn-large')); ?>
+				<a href="<?php echo URL::route('home'); ?>" class="btn btn-default">Cancel</a>
+			</div>
+		</div>         
+ 
+    <?php echo Form::close(); ?>
+ 
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,199 @@
+[10-Sep-2013 16:08:22 UTC] PHP Fatal error:  Class 'App\Controllers\Admin\Validator' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/admin/PagesController.php on line 30
+[11-Sep-2013 09:21:47 UTC] PHP Fatal error:  Class 'App\Controllers\Admin\View' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/admin/PagesController.php on line 10
+[11-Sep-2013 09:23:04 UTC] PHP Fatal error:  Class 'App\Controllers\Admin\Illuminate\Support\Facades\View' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/admin/PagesController.php on line 10
+[11-Sep-2013 09:46:23 UTC] PHP Fatal error:  Class 'Krucas\Notification\NotificationServiceProvider' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 123
+[11-Sep-2013 09:49:12 UTC] PHP Fatal error:  Class 'Krucas\Notification\NotificationServiceProvider' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 123
+[11-Sep-2013 13:37:50 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:38:02 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:38:17 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:41:06 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:42:30 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:43:39 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:47:17 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:48:22 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:49:19 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:51:09 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:51:27 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:52:25 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:52:35 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 13:58:33 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 14:01:17 UTC] PHP Fatal error:  Call to a member function first() on a non-object in /home2/kodewebs/public_html/hx/laravel/app/storage/views/bd19a3aec2affc0c5a278908c203f7f8 on line 10
+[11-Sep-2013 14:38:31 UTC] PHP Fatal error:  Class 'Page' not found in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 20
+[11-Sep-2013 14:38:37 UTC] PHP Fatal error:  Class 'Page' not found in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 20
+[11-Sep-2013 14:38:55 UTC] PHP Fatal error:  Class 'Page' not found in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 20
+[11-Sep-2013 14:39:06 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 14:40:09 UTC] PHP Fatal error:  Class 'App\Models\Page' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/admin/PagesController.php on line 10
+[11-Sep-2013 14:41:44 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/admin/PagesController.php on line 4
+[11-Sep-2013 14:42:38 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/admin/PagesController.php on line 4
+[11-Sep-2013 14:46:33 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 14:47:55 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[11-Sep-2013 14:47:58 UTC] PHP Fatal error:  Class 'User' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php on line 527
+[12-Sep-2013 09:40:28 UTC] PHP Fatal error:  Call to undefined method Illuminate\Events\Dispatcher::first() in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 177
+[12-Sep-2013 09:40:33 UTC] PHP Fatal error:  Call to undefined method Illuminate\Events\Dispatcher::first() in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 177
+[13-Sep-2013 11:55:37 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:55:40 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:56:31 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:56:44 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:56:47 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:58:45 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:58:58 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:59:00 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:59:09 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:59:26 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 11:59:30 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 12:00:06 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 12:00:08 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 12:00:12 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 12:00:15 UTC] PHP Fatal error:  Class 'Monolog\Formatter\LineFormatter' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 4
+[13-Sep-2013 12:05:00 UTC] PHP Fatal error:  Class 'Notification' not found in /home2/kodewebs/public_html/hx/laravel/app/storage/views/f63b6d87c382d3ff4fd20cbeb4589203 on line 13
+[13-Sep-2013 12:05:40 UTC] PHP Fatal error:  Class 'Notification' not found in /home2/kodewebs/public_html/hx/laravel/app/storage/views/f63b6d87c382d3ff4fd20cbeb4589203 on line 13
+[13-Sep-2013 12:49:03 UTC] PHP Parse error:  syntax error, unexpected ';' in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 26
+[13-Sep-2013 13:12:14 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\UrlGenerator::rouee() in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 177
+[13-Sep-2013 20:50:36 UTC] PHP Parse error:  syntax error, unexpected 'App' (T_STRING) in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 71
+[17-Sep-2013 07:57:29 UTC] PHP Fatal error:  Class 'Way\Generators\GeneratorsServiceProvider' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 123
+[17-Sep-2013 08:00:50 UTC] PHP Fatal error:  Class 'App\Models\Elegant' not found in /home2/kodewebs/public_html/hx/laravel/app/models/Page.php on line 3
+[17-Sep-2013 08:01:08 UTC] PHP Fatal error:  Cannot redeclare non static App\Models\Elegant::$rules as static App\Models\Page::$rules in /home2/kodewebs/public_html/hx/laravel/app/models/Page.php on line 3
+[17-Sep-2013 08:12:51 UTC] PHP Fatal error:  Class 'App\Models\Validator' not found in /home2/kodewebs/public_html/hx/laravel/app/models/Elegant.php on line 12
+[17-Sep-2013 09:15:25 UTC] PHP Fatal error:  Cannot access protected property App\Models\Page::$rules in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 51
+[17-Sep-2013 09:24:09 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/10c2204823c4f57ce855033896ca70a0 on line 33
+[17-Sep-2013 09:36:15 UTC] PHP Parse error:  syntax error, unexpected ':' in /home2/kodewebs/public_html/hx/laravel/app/models/Elegant.php on line 11
+[17-Sep-2013 09:36:43 UTC] PHP Parse error:  syntax error, unexpected ':' in /home2/kodewebs/public_html/hx/laravel/app/models/Elegant.php on line 11
+[17-Sep-2013 09:36:55 UTC] PHP Parse error:  syntax error, unexpected ':' in /home2/kodewebs/public_html/hx/laravel/app/models/Elegant.php on line 11
+[17-Sep-2013 09:41:58 UTC] PHP Fatal error:  Access to undeclared static property: App\Models\Elegant::$rules in /home2/kodewebs/public_html/hx/laravel/app/models/Elegant.php on line 40
+[17-Sep-2013 09:42:24 UTC] PHP Fatal error:  Using $this when not in object context in /home2/kodewebs/public_html/hx/laravel/app/models/Elegant.php on line 40
+[17-Sep-2013 13:22:06 UTC] PHP Parse error:  syntax error, unexpected ';' in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 7
+[17-Sep-2013 13:23:14 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::paginate() in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 7
+[17-Sep-2013 13:23:27 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 7
+[17-Sep-2013 13:23:34 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::paginate() in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 7
+[18-Sep-2013 12:59:27 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::orderBy() in /home2/kodewebs/public_html/hx/laravel/app/controllers/PagesController.php on line 13
+[19-Sep-2013 12:53:52 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 12:54:27 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 12:55:03 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 12:55:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 12:55:54 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 12:56:44 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 12:57:31 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 12:57:42 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 12:59:41 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 13:00:40 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/9b824ce1ee73757db5b2e254663ee709 on line 3
+[19-Sep-2013 13:42:16 UTC] PHP Parse error:  syntax error, unexpected ';' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/40cd890bd4f7ea125826f4bfc33b0e57 on line 26
+[19-Sep-2013 13:42:58 UTC] PHP Parse error:  syntax error, unexpected ':' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/40cd890bd4f7ea125826f4bfc33b0e57 on line 26
+[19-Sep-2013 13:44:52 UTC] PHP Parse error:  syntax error, unexpected ':' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/40cd890bd4f7ea125826f4bfc33b0e57 on line 26
+[19-Sep-2013 13:44:54 UTC] PHP Parse error:  syntax error, unexpected ':' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/40cd890bd4f7ea125826f4bfc33b0e57 on line 26
+[19-Sep-2013 13:55:21 UTC] PHP Parse error:  syntax error, unexpected ';' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/7867677bbd94bfcafc519a3df9f059b6 on line 71
+[19-Sep-2013 13:55:22 UTC] PHP Parse error:  syntax error, unexpected ';' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/7867677bbd94bfcafc519a3df9f059b6 on line 71
+[19-Sep-2013 13:56:24 UTC] PHP Parse error:  syntax error, unexpected ';' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/7867677bbd94bfcafc519a3df9f059b6 on line 71
+[19-Sep-2013 15:08:01 UTC] PHP Warning:  Unterminated comment starting line 3 in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 3
+[19-Sep-2013 16:29:07 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 100
+[19-Sep-2013 16:29:10 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 100
+[19-Sep-2013 16:29:16 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 100
+[20-Sep-2013 13:52:53 UTC] PHP Parse error:  syntax error, unexpected ';' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/7867677bbd94bfcafc519a3df9f059b6 on line 74
+[20-Sep-2013 15:06:19 UTC] PHP Fatal error:  Class 'App\Model\User' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/UserDetailsController.php on line 7
+[20-Sep-2013 15:28:28 UTC] PHP Fatal error:  Call to a member function member() on a non-object in /home2/kodewebs/public_html/hx/laravel/app/controllers/UserDetailsController.php on line 8
+[20-Sep-2013 15:48:17 UTC] PHP Fatal error:  Call to a member function member() on a non-object in /home2/kodewebs/public_html/hx/laravel/app/controllers/UserDetailsController.php on line 8
+[08-Oct-2013 05:18:11 America/Denver] PHP Strict Standards:  Accessing static property Test::$static_property as non static in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 6
+[08-Oct-2013 05:18:11 America/Denver] PHP Notice:  Undefined property: Test::$static_property in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 6
+[08-Oct-2013 05:18:24 America/Denver] PHP Strict Standards:  Accessing static property Test::$static_property as non static in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 6
+[08-Oct-2013 05:18:24 America/Denver] PHP Notice:  Undefined property: Test::$static_property in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 6
+[08-Oct-2013 05:18:25 America/Denver] PHP Strict Standards:  Accessing static property Test::$static_property as non static in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 6
+[08-Oct-2013 05:18:25 America/Denver] PHP Notice:  Undefined property: Test::$static_property in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 6
+[08-Oct-2013 05:19:03 America/Denver] PHP Fatal error:  Call to undefined function display_errors() in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 05:19:04 America/Denver] PHP Fatal error:  Call to undefined function display_errors() in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 05:19:22 America/Denver] PHP Fatal error:  Call to undefined function php_ini() in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 05:19:29 America/Denver] PHP Strict Standards:  Accessing static property Test::$static_property as non static in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[08-Oct-2013 05:19:29 America/Denver] PHP Notice:  Undefined property: Test::$static_property in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[08-Oct-2013 05:20:21 America/Denver] PHP Strict Standards:  Accessing static property Test::$static_property as non static in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[08-Oct-2013 05:20:21 America/Denver] PHP Notice:  Undefined property: Test::$static_property in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[08-Oct-2013 05:26:00 America/Denver] PHP Fatal error:  Call to undefined function domxml_new_doc() in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 2
+[08-Oct-2013 05:26:02 America/Denver] PHP Fatal error:  Call to undefined function domxml_new_doc() in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 2
+[08-Oct-2013 05:40:26 America/Denver] PHP Notice:  Undefined offset: 6 in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 05:40:54 America/Denver] PHP Notice:  Undefined index: eraga in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 05:49:12 America/Denver] PHP Notice:  Constant MY_VAR already defined in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 33
+[08-Oct-2013 07:27:06 America/Denver] PHP Notice:  Undefined variable: pattern in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 07:27:06 America/Denver] PHP Notice:  Undefined variable: zipcode in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 07:27:06 America/Denver] PHP Warning:  preg_match(): Empty regular expression in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 07:30:50 America/Denver] PHP Parse error:  syntax error, unexpected ',' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 5
+[08-Oct-2013 07:30:52 America/Denver] PHP Parse error:  syntax error, unexpected ',' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 5
+[08-Oct-2013 07:32:49 America/Denver] PHP Notice:  Undefined index: element in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[08-Oct-2013 07:32:50 America/Denver] PHP Notice:  Undefined index: element in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[08-Oct-2013 07:33:25 America/Denver] PHP Notice:  Undefined index: element in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 8
+[08-Oct-2013 07:33:27 America/Denver] PHP Notice:  Undefined index: element in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 8
+[08-Oct-2013 07:33:51 America/Denver] PHP Notice:  Undefined index: element in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[08-Oct-2013 07:33:54 America/Denver] PHP Notice:  Undefined index: element in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[08-Oct-2013 07:33:54 America/Denver] PHP Notice:  Array to string conversion in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 8
+[08-Oct-2013 07:37:44 America/Denver] PHP Warning:  preg_split(): Unknown modifier '*' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 07:38:20 America/Denver] PHP Warning:  preg_split(): Unknown modifier '*' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 07:38:21 America/Denver] PHP Warning:  preg_split(): Unknown modifier '*' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 07:38:40 America/Denver] PHP Warning:  preg_split(): Unknown modifier '\' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 07:39:04 America/Denver] PHP Warning:  preg_split(): Unknown modifier ']' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 07:43:35 America/Denver] PHP Parse error:  syntax error, unexpected '123' (T_LNUMBER) in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 29
+[08-Oct-2013 07:57:46 America/Denver] PHP Parse error:  syntax error, unexpected '123' (T_LNUMBER) in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 31
+[08-Oct-2013 07:57:49 America/Denver] PHP Parse error:  syntax error, unexpected '123' (T_LNUMBER) in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 31
+[08-Oct-2013 08:43:59 America/Denver] PHP Parse error:  syntax error, unexpected '<' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 4
+[08-Oct-2013 08:49:55 America/Denver] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 08:50:03 America/Denver] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 3
+[08-Oct-2013 09:19:39 America/Denver] PHP Notice:  Array to string conversion in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 6
+[08-Oct-2013 09:19:54 America/Denver] PHP Warning:  Unterminated comment starting line 144 in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 144
+[08-Oct-2013 09:23:19 America/Denver] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT) in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 4
+[09-Oct-2013 06:00:11 America/Denver] PHP Parse error:  syntax error, unexpected 'print' (T_PRINT) in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 4
+[09-Oct-2013 06:19:34 America/Denver] PHP Notice:  Undefined variable: x in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 6
+[09-Oct-2013 06:21:14 America/Denver] PHP Notice:  Undefined variable: x in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 5
+[09-Oct-2013 06:21:31 America/Denver] PHP Notice:  Undefined variable: x in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 5
+[09-Oct-2013 06:21:52 America/Denver] PHP Notice:  Undefined variable: z in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 2
+[09-Oct-2013 06:21:52 America/Denver] PHP Notice:  Undefined variable: x in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[09-Oct-2013 06:21:53 America/Denver] PHP Notice:  Undefined variable: z in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 2
+[09-Oct-2013 06:21:53 America/Denver] PHP Notice:  Undefined variable: x in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[09-Oct-2013 06:22:07 America/Denver] PHP Notice:  Undefined variable: z in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 2
+[09-Oct-2013 06:22:07 America/Denver] PHP Notice:  Undefined variable: x in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[09-Oct-2013 06:22:34 America/Denver] PHP Notice:  Undefined variable: x in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 5
+[09-Oct-2013 06:22:49 America/Denver] PHP Notice:  Undefined variable: x in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 5
+[11-Oct-2013 07:23:37 America/Denver] PHP Warning:  Unterminated comment starting line 175 in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 175
+[11-Oct-2013 07:23:37 America/Denver] PHP Notice:  Use of undefined constant t - assumed 't' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 4
+[11-Oct-2013 07:24:47 America/Denver] PHP Warning:  Unterminated comment starting line 8 in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 8
+[11-Oct-2013 07:25:04 America/Denver] PHP Warning:  Unterminated comment starting line 8 in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 8
+[11-Oct-2013 07:57:35 America/Denver] PHP Notice:  Undefined variable: newstring in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 13
+[11-Oct-2013 08:12:28 America/Denver] PHP Parse error:  syntax error, unexpected '}' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[11-Oct-2013 08:12:37 America/Denver] PHP Parse error:  syntax error, unexpected '}' in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 7
+[11-Oct-2013 08:24:57 America/Denver] PHP Warning:  Unterminated comment starting line 14 in /home2/kodewebs/public_html/hx/laravel/public/test.php on line 14
+[26-Oct-2013 08:46:47 UTC] PHP Fatal error:  Class 'Services' not found in /home2/kodewebs/public_html/hx/laravel/app/controllers/ServicesController.php on line 58
+[26-Oct-2013 12:51:04 UTC] PHP Parse error:  syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/6996369f2fecf11ecd63970f040bbe68 on line 54
+[26-Oct-2013 12:51:09 UTC] PHP Parse error:  syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/6996369f2fecf11ecd63970f040bbe68 on line 54
+[26-Oct-2013 13:23:42 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: user' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176:88
+Stack trace:
+#0 /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176(88): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home2/kodewebs...', 88, Array)
+#1 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/home2/kodewebs...')
+#2 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/kodewebs...', Array)
+#3 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/home2/kodewebs...', Array)
+#4 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->get in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176 on line 88
+[26-Oct-2013 13:23:42 UTC] PHP Fatal error:  Call to a member function services() on a non-object in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176 on line 88
+[26-Oct-2013 13:24:29 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: user' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176:88
+Stack trace:
+#0 /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176(88): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home2/kodewebs...', 88, Array)
+#1 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/home2/kodewebs...')
+#2 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/kodewebs...', Array)
+#3 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/home2/kodewebs...', Array)
+#4 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->get in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176 on line 88
+[26-Oct-2013 13:24:29 UTC] PHP Fatal error:  Call to a member function services() on a non-object in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176 on line 88
+[26-Oct-2013 13:24:33 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: user' in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176:88
+Stack trace:
+#0 /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176(88): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home2/kodewebs...', 88, Array)
+#1 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(38): include('/home2/kodewebs...')
+#2 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home2/kodewebs...', Array)
+#3 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(100): Illuminate\View\Engines\CompilerEngine->get('/home2/kodewebs...', Array)
+#4 /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/View/View.php(81): Illuminate\View\View->get in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176 on line 88
+[26-Oct-2013 13:24:33 UTC] PHP Fatal error:  Call to a member function services() on a non-object in /home2/kodewebs/public_html/hx/laravel/app/storage/views/74cdb0afcba9e6f935039cba10f75176 on line 88
+[27-Oct-2013 06:38:26 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 83
+[27-Oct-2013 09:29:31 UTC] PHP Parse error:  syntax error, unexpected ')' in /home2/kodewebs/public_html/hx/laravel/app/routes.php on line 23
+[02-Nov-2013 13:33:08 UTC] PHP Fatal error:  Class 'Carbon' not found in /home2/kodewebs/public_html/hx/laravel/app/storage/views/5d06b29003b8c69f715dfb77077433f4 on line 20
+[02-Nov-2013 13:38:48 UTC] PHP Fatal error:  Call to undefined function Carbon\Carbon() in /home2/kodewebs/public_html/hx/laravel/app/storage/views/5d06b29003b8c69f715dfb77077433f4 on line 20
+[12-Nov-2013 13:21:52 UTC] PHP Fatal error:  Cannot redeclare non static App\Models\Elegant::$rules as static App\Models\Offer::$rules in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 3
+[12-Nov-2013 19:35:44 UTC] PHP Fatal error:  Cannot redeclare non static App\Models\Elegant::$rules as static App\Models\Offer::$rules in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 3
+[12-Nov-2013 19:37:36 UTC] PHP Fatal error:  Cannot redeclare non static App\Models\Elegant::$rules as static App\Models\Offer::$rules in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 3
+[12-Nov-2013 20:25:13 UTC] PHP Parse error:  syntax error, unexpected '.', expecting ')' in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 15
+[12-Nov-2013 20:25:30 UTC] PHP Parse error:  syntax error, unexpected '(' in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 15
+[12-Nov-2013 20:25:49 UTC] PHP Parse error:  syntax error, unexpected '(' in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 13
+[12-Nov-2013 20:27:08 UTC] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting function (T_FUNCTION) in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 18
+[12-Nov-2013 20:36:22 UTC] PHP Fatal error:  Can't use function return value in write context in /home2/kodewebs/public_html/hx/laravel/app/controllers/UserOffersController.php on line 38
+[12-Nov-2013 20:42:09 UTC] PHP Parse error:  syntax error, unexpected ''image'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 17
+[12-Nov-2013 20:42:10 UTC] PHP Parse error:  syntax error, unexpected ''image'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 17
+[12-Nov-2013 20:42:12 UTC] PHP Parse error:  syntax error, unexpected ''image'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home2/kodewebs/public_html/hx/laravel/app/models/Offer.php on line 17

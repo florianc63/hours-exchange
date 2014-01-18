@@ -1,0 +1,87 @@
+[09-Sep-2013 03:37:45] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[09-Sep-2013 03:38:15] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[09-Sep-2013 09:55:46 UTC] PHP Fatal error:  Class 'App\Models\Offer' not found in /home2/kodewebs/public_html/hx/laravel/app/database/seeds/OffersTableSeeder.php on line 11
+[09-Sep-2013 09:57:44 UTC] PHP Fatal error:  Class 'App\Models\Offer' not found in /home2/kodewebs/public_html/hx/laravel/app/database/seeds/OffersTableSeeder.php on line 11
+[09-Sep-2013 10:00:43 UTC] PHP Fatal error:  Class 'App\Models\Offer' not found in /home2/kodewebs/public_html/hx/laravel/app/database/seeds/OffersTableSeeder.php on line 11
+[09-Sep-2013 10:00:54 UTC] PHP Fatal error:  Class 'App\Models\Offer' not found in /home2/kodewebs/public_html/hx/laravel/app/database/seeds/OffersTableSeeder.php on line 11
+[09-Sep-2013 10:06:08 UTC] PHP Fatal error:  Class 'App\Models\Article' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php(42) : eval()'d code on line 1
+[09-Sep-2013 10:06:33 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php(42) : eval()'d code on line 1
+[09-Sep-2013 10:07:37 UTC] PHP Warning:  Unexpected character in input:  '' (ASCII=27) state=0 in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php(42) : eval()'d code on line 1
+[09-Sep-2013 10:07:37 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ']' in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php(42) : eval()'d code on line 1
+[09-Sep-2013 10:07:39 UTC] PHP Parse error:  syntax error, unexpected end of file in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php(42) : eval()'d code on line 1
+[09-Sep-2013 10:26:18 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php(42) : eval()'d code on line 1
+[10-Sep-2013 09:25:42] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[10-Sep-2013 09:26:50] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[10-Sep-2013 09:32:47] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 03:53:30] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 07:36:48] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 07:51:24] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 07:58:29] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:01:55] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:06:29] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:08:52] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:09:31] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:10:42] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:11:41] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:13:40] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:38:53] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:40:05] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:40:53] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:46:30] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[11-Sep-2013 08:48:15] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[13-Sep-2013 02:14:06] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[13-Sep-2013 05:36:38] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[13-Sep-2013 05:38:06] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[13-Sep-2013 05:55:18] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[13-Sep-2013 05:58:43] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[13-Sep-2013 05:59:07] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[13-Sep-2013 06:00:01] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 02:37:34] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 02:46:31] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 02:50:23] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 09:03:50 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Schema\Blueprint::int() in /home2/kodewebs/public_html/hx/laravel/app/database/migrations/2013_09_19_085023_create_skillscategories_table.php on line 19
+[19-Sep-2013 03:05:04] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 09:05:09 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Schema\Blueprint::int() in /home2/kodewebs/public_html/hx/laravel/app/database/migrations/2013_09_19_085023_create_skillscategories_table.php on line 19
+[19-Sep-2013 09:08:08 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Schema\Blueprint::int() in /home2/kodewebs/public_html/hx/laravel/app/database/migrations/2013_09_19_085023_create_skillscategories_table.php on line 19
+[19-Sep-2013 09:09:12 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Schema\Blueprint::int() in /home2/kodewebs/public_html/hx/laravel/app/database/migrations/2013_09_19_085023_create_skillscategories_table.php on line 20
+[19-Sep-2013 09:10:21 UTC] PHP Fatal error:  Class 'CreateSkillscategoriesTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[19-Sep-2013 09:11:11 UTC] PHP Fatal error:  Class 'CreateSkillscategoriesTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[19-Sep-2013 09:11:46 UTC] PHP Fatal error:  Class 'CreateSkillscategoriesTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[19-Sep-2013 03:12:17] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 09:12:24 UTC] PHP Fatal error:  Class 'CreateSkillscategoriesTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[19-Sep-2013 09:14:38 UTC] PHP Fatal error:  Class 'CreateSkillscategoriesTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[19-Sep-2013 09:16:33 UTC] PHP Fatal error:  Class 'CreateSkillscategoriesTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[19-Sep-2013 09:16:49 UTC] PHP Fatal error:  Class 'CreateSkillscategoriesTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[19-Sep-2013 03:17:04] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 06:56:41] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 07:15:09] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 07:22:07] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[19-Sep-2013 13:22:15 UTC] PHP Fatal error:  Class 'Skills' not found in /home2/kodewebs/public_html/hx/laravel/app/database/seeds/SkillsTableSeeder.php on line 9
+[19-Sep-2013 13:22:53 UTC] PHP Fatal error:  Class 'Skill' not found in /home2/kodewebs/public_html/hx/laravel/app/database/seeds/SkillsTableSeeder.php on line 9
+[19-Sep-2013 07:23:34] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[20-Sep-2013 06:51:38] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[20-Sep-2013 07:00:46] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[20-Sep-2013 13:00:56 UTC] PHP Fatal error:  Class 'UserDetail' not found in /home2/kodewebs/public_html/hx/laravel/app/database/seeds/UserdetailsTableSeeder.php on line 9
+[20-Sep-2013 13:01:21 UTC] PHP Fatal error:  Class 'CreateUserdetailsTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[20-Sep-2013 07:01:35] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[20-Sep-2013 13:01:39 UTC] PHP Fatal error:  Class 'CreateUserdetailsTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[20-Sep-2013 13:02:35 UTC] PHP Fatal error:  Class 'CreateUserdetailsTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[20-Sep-2013 07:02:42] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[20-Sep-2013 13:02:47 UTC] PHP Fatal error:  Class 'UserDetail' not found in /home2/kodewebs/public_html/hx/laravel/app/database/seeds/UserdetailsTableSeeder.php on line 9
+[20-Sep-2013 09:02:58] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[20-Sep-2013 09:09:02] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[20-Sep-2013 09:14:20] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[20-Sep-2013 09:15:03] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[26-Oct-2013 02:42:11] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[26-Oct-2013 04:08:03] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[26-Oct-2013 10:09:00 UTC] PHP Fatal error:  Class 'CreateServiceuserTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[26-Oct-2013 04:09:13] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[26-Oct-2013 10:09:18 UTC] PHP Fatal error:  Class 'CreateServiceuserTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[26-Oct-2013 10:09:37 UTC] PHP Fatal error:  Class 'CreateServiceuserTable' not found in /home2/kodewebs/public_html/hx/laravel/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php on line 301
+[26-Oct-2013 04:09:45] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[27-Oct-2013 03:17:55] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[27-Oct-2013 03:26:32] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[02-Nov-2013 07:07:34] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[02-Nov-2013 07:08:52] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[10-Nov-2013 12:37:41] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13
+[10-Nov-2013 12:46:55] PHP Fatal error:  Class 'Phar' not found in /home2/kodewebs/public_html/hx/laravel/composer.phar on line 13

@@ -1,0 +1,7 @@
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^hx.kodewebsites.com$ [NC]
+RewriteCond %{REQUEST_URI} !laravel/public/
+RewriteRule (.*) /laravel/public/$1 [L]

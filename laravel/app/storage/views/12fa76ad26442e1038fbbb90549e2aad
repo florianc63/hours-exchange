@@ -1,0 +1,43 @@
+
+<?php /*  Web site Title  */ ?>
+<?php $__env->startSection('title'); ?>
+@parent
+Edit Group
+<?php $__env->stopSection(); ?>
+
+<?php /*  Content  */ ?>
+<?php $__env->startSection('content'); ?>
+<h4>Edit Group</h4>
+<div class="well">
+	<form class="form-horizontal" action="<?php echo URL::to('admin/groups'); ?>/<?php echo $group['id']; ?>" method="POST">   
+        <?php echo Form::token(); ?>
+        <input type="hidden" name="_method" value="PUT">
+    
+        <div class="control-group <?php echo ($errors->has('name')) ? 'error' : ''; ?>" for="name">
+            <label class="control-label" for="name">Name</label>
+            <div class="controls">
+                <input name="name" value="<?php echo (Request::old('name')) ? Request::old('name') : $group->name; ?>" type="text" class="input-xlarge" placeholder="Name">
+                <?php echo ($errors->has('name') ? $errors->first('name') : ''); ?>
+            </div>
+        </div>
+
+        <div class="control-group" for="permissions">
+            <label class="control-label" for="permissions">Permissions</label>
+            <div class="controls">
+                <label class="checkbox inline">
+                    <input type="checkbox" value="1" name="adminPermissions" <?php if ( isset($group['permissions']['admin']) ): ?> checked <?php endif; ?>> Admin
+                </label>
+                <label class="checkbox inline">
+                    <input type="checkbox" value="1" name="userPermissions" <?php if ( isset($group['permissions']['users']) ): ?> checked <?php endif; ?>> User
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Save Changes</button>
+        </div>
+  </form>
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

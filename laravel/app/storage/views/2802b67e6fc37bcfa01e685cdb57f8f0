@@ -1,0 +1,30 @@
+
+<?php /*  Web site Title  */ ?>
+<?php $__env->startSection('title'); ?>
+@parent
+Reset Password
+<?php $__env->stopSection(); ?>
+
+<?php /*  Content  */ ?>
+<?php $__env->startSection('content'); ?>
+<h4>Resend Activation</h4>
+<div class="well">
+	<form class="form-horizontal" action="<?php echo URL::to('admin/users/resend'); ?>" method="post">   
+    	<?php echo Form::token(); ?>
+    	
+		<div class="control-group <?php echo ($errors->has('email') ? 'error' : ''); ?>" for="email">
+            <label class="control-label" for="email">E-mail</label>
+            <div class="controls">
+                <input name="email" id="email" value="<?php echo Request::old('email'); ?>" type="text" class="input-xlarge" placeholder="E-mail">
+                <?php echo ($errors->has('email') ? $errors->first('email') : ''); ?>
+            </div>
+        </div>
+
+    	<div class="form-actions">
+    		<button class="btn btn-primary" type="submit">Resend Activation</button>
+    	</div>
+  </form>
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,25 @@
+
+<?php /*  Web site Title  */ ?>
+<?php $__env->startSection('title'); ?>
+@parent
+<?php echo e($entry->title); ?>
+<?php $__env->stopSection(); ?>
+
+<?php /*  Content  */ ?>
+<?php $__env->startSection('content'); ?>
+ 
+	<p>&nbsp;</p>
+	<h6><em>Service type: <strong><?php echo e($entry->service->name); ?></strong></em></h6>
+	<h2><?php echo e($entry->title); ?> <small>(<?php echo e($entry->price); ?> hours)</small></h2>
+	<h5>Posted at <?php echo Carbon\Carbon::createFromTimestamp(strtotime($entry->created_at))->toFormattedDateString(); ?> &bull; by <?php echo e($entry->author->first_name); ?> <?php echo e($entry->author->last_name); ?></h5>
+	<p>Available: <strong><?php echo e($entry->qty); ?></strong></p>
+	
+	<?php if ($entry->image != ''): ?>
+		<img src="<?php echo e($entry->image); ?>" width="320"/>				
+	<?php endif; ?>
+	<div>
+		<?php echo e($entry->body); ?>
+	</div>
+	
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,50 @@
+
+<?php /*  Web site Title  */ ?>
+<?php $__env->startSection('title'); ?>
+@parent
+Home
+<?php $__env->stopSection(); ?>
+
+<?php /*  Content  */ ?>
+<?php $__env->startSection('content'); ?>
+
+  <?php if (Sentry::check()): ?>
+  
+	<h1>Account Profile</h1>
+	
+  	<div class="well clearfix">
+	    <div class="span7">
+		    <?php if ($user->first_name): ?>
+		    	<p><strong>First Name:</strong> <?php echo $user->first_name; ?> </p>
+			<?php endif; ?>
+			<?php if ($user->last_name): ?>
+		    	<p><strong>Last Name:</strong> <?php echo $user->last_name; ?> </p>
+			<?php endif; ?>
+		    <p><strong>Email:</strong> <?php echo $user->email; ?></p>
+		    <button class="btn btn-info" onClick="location.href='<?php echo URL::to('admin/users/edit'); ?>/<?php echo $user->id; ?>'">Edit Profile</button>
+		</div>
+		<div class="span4">
+			<p><em>Account created: <?php echo $user->created_at; ?></em></p>
+			<p><em>Last Updated: <?php echo $user->updated_at; ?></em></p>
+		</div>
+	</div>
+
+	<h1>Group Memberships:</h1>
+	<div class="well">
+	    <ul>
+	    	<?php if (count($myGroups) >= 1): ?>
+		    	<?php foreach ($myGroups as $group): ?>
+					<li><?php echo $group['name']; ?></li>
+				<?php endforeach; ?>
+			<?php else: ?> 
+				<li>No Group Memberships.</li>
+			<?php endif; ?>
+	    </ul>
+	</div>
+
+  <?php endif; ?>
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

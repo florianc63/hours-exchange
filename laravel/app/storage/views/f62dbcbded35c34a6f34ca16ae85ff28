@@ -1,0 +1,28 @@
+
+<?php /*  Web site Title  */ ?>
+<?php $__env->startSection('title'); ?>
+@parent
+Show category
+<?php $__env->stopSection(); ?>
+
+<?php /*  Content  */ ?>
+<?php $__env->startSection('content'); ?>
+ 
+    <h1>Show category </h1>
+ 
+	<dl class="dl-horizontal">
+		<dt>Name</dt>
+		<dd><?php echo e($category->name); ?></dd>
+		<dt>Slug</dt>
+		<dd><?php echo e($category->slug); ?></dd>
+		<dt>Place</dt>
+		<dd><?php echo e($category->place); ?></dd>
+		<dt>&nbsp;</dt>
+		<dd>
+			<a href="<?php echo URL::route('admin.skillscategories.edit', $category->id); ?>" class="btn btn-success btn-sm">Edit</a>		 
+			<a href="<?php echo URL::route('admin.skillscategories.index'); ?>" class="btn btn-default btn-sm">Cancel</a>
+		</dd>
+	</dl>
+ 
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
