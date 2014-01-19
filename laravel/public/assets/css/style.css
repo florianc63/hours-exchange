@@ -1,162 +1,324 @@
-body {
-	color: #333;
-	font-family: 'Lato', serif;
-}
-
-a,
-a:hover,
-a:focus,
-a:active {
-	color: #1F6AA4;
-}
-
-.alert {
-	margin-top: 20px;
-}
-
-.input-error {
-	color: #f03d39;
-}
-.block {
-	clear: both;
-	display: block;
-}
-
-.table .btn {
-	margin-right: 4px;
-}
-
-.wrapper {
-	width: 970px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
-.top-head {
-	background-image: url('../img/bg-header.png');
-	background-repeat: repeat-x;
-	background-color: #082331;
-	height: 60px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-
-.top-bar {
-	margin-top: 16px;
-}
-.top-bar-input {
-	width: 85%;
-	height: 26px;
-	margin: 0;
-	border: 0;
-	padding: 5px;
-}
-.top-bar-search {
-	width: 13%;
-	height: 26px;
-	text-align: center;
-	margin: 0;
-	border: 0;
-	padding: 2px 0px;
-	background-color: #1F6AA4;
-}
-.top-bar-search .glyphicon {
-	top: 2px;
-	left: -1px;
-	color: #fff;
-}
-
-.top-menu {
-	background-image: url('../img/bg-menu-top.png');
-	background-repeat: repeat-x;
-	height: 28px;
-	padding-top: 3px;
-	color: #ddd;
-}
-
-.default-menu {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	list-style: none;
-}
-.default-menu li {
-	display: inline;
-	margin-right: 10px;
-}
-.default-menu li:last-child {
-	margin-right: 0px;
-}
-.default-menu li .glyphicon {
-	font-size: 8px;
-	top: -2px;
-	margin-right: 2px;
-}
-.default-menu li a {
-	color: #fff;
-}
-.default-menu li a:hover,
-.default-menu li a:focus,
-.default-menu li a:active,
-.default-menu li.active a {
-	color: #ffeeb7;	
-}
-
-.admin-box-top {
-	padding-top: 5px;
-	color: #eee;
-}
-
-.page {
-	background-image: url('../img/bg-page.png');
-	background-repeat: repeat-x;
-	background-color: #FFFBEF;
-}
-
-.page .content {
-
-}
-
-.page .content .logo-big {
-	background-image: url('../img/hx-logo.png');
-	background-position: 0 -1px;
-	width: 350px;
-	height: 49px;
-	margin: 100px auto;
-}
-
-.footer {
-	background-image: url('../img/bg-header.png');
-	background-repeat: repeat-x;
-	padding: 15px;
-	color: #eee;
-	text-align: center;
-	font-size: 12px;
-}
-
-
-/* Make it responsive */ 
-
-@media (min-width: 992px) and (max-width: 1199px) {
-	.wrapper {
-		width: 970px;
-	}
-}
-@media (min-width: 768px) and (max-width: 991px) {
-	.wrapper {
-		width: 100%;
-	}
-}
-@media screen and (max-width: 768px) {
-	.wrapper {
-		width: 100%;
-	}
-}
-@media screen and (max-width: 400px) {
-	.wrapper {
-		width: 100%;
-	}
-}
+body {
+
+	color: #333;
+
+	font-family: 'Lato', serif;
+
+}
+
+
+
+a,
+
+a:hover,
+
+a:focus,
+
+a:active {
+
+	color: #1F6AA4;
+
+}
+
+
+
+.alert {
+
+	margin-top: 20px;
+
+}
+
+
+
+.input-error {
+
+	color: #f03d39;
+
+}
+
+.block {
+
+	clear: both;
+
+	display: block;
+
+}
+
+
+
+.table .btn {
+
+	margin-right: 4px;
+
+}
+
+
+
+.wrapper {
+
+	width: 970px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+}
+
+
+
+
+
+.top-head {
+
+	background-image: url('../img/bg-header.png');
+
+	background-repeat: repeat-x;
+
+	background-color: #082331;
+
+	height: 60px;
+
+	padding-top: 2px;
+
+	padding-bottom: 2px;
+
+}
+
+
+
+.top-bar {
+
+	margin-top: 16px;
+
+}
+
+.top-bar-input {
+
+	width: 85%;
+
+	height: 26px;
+
+	margin: 0;
+
+	border: 0;
+
+	padding: 5px;
+
+}
+
+.top-bar-search {
+
+	width: 13%;
+
+	height: 26px;
+
+	text-align: center;
+
+	margin: 0;
+
+	border: 0;
+
+	padding: 2px 0px;
+
+	background-color: #1F6AA4;
+
+}
+
+.top-bar-search .glyphicon {
+
+	top: 2px;
+
+	left: -1px;
+
+	color: #fff;
+
+}
+
+
+
+.top-menu {
+
+	background-image: url('../img/bg-menu-top.png');
+
+	background-repeat: repeat-x;
+
+	height: 28px;
+
+	padding-top: 3px;
+
+	color: #ddd;
+
+}
+
+
+
+.default-menu {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;
+
+	list-style: none;
+
+}
+
+.default-menu li {
+
+	display: inline;
+
+	margin-right: 10px;
+
+}
+
+.default-menu li:last-child {
+
+	margin-right: 0px;
+
+}
+
+.default-menu li .glyphicon {
+
+	font-size: 8px;
+
+	top: -2px;
+
+	margin-right: 2px;
+
+}
+
+.default-menu li a {
+
+	color: #fff;
+
+}
+
+.default-menu li a:hover,
+
+.default-menu li a:focus,
+
+.default-menu li a:active,
+
+.default-menu li.active a {
+
+	color: #ffeeb7;	
+
+}
+
+
+
+.admin-box-top {
+
+	padding-top: 5px;
+
+	color: #eee;
+
+}
+
+
+
+.page {
+
+	background-image: url('../img/bg-page.png');
+
+	background-repeat: repeat-x;
+
+	background-color: #FFFBEF;
+
+}
+
+
+
+.page .content {
+
+
+
+}
+
+
+
+.page .content .logo-big {
+
+	background-image: url('../img/hx-logo.png');
+
+	background-position: 0 -1px;
+
+	width: 350px;
+
+	height: 49px;
+
+	margin: 100px auto;
+
+}
+
+
+
+.footer {
+
+	background-image: url('../img/bg-header.png');
+
+	background-repeat: repeat-x;
+
+	padding: 15px;
+
+	color: #eee;
+
+	text-align: center;
+
+	font-size: 12px;
+
+}
+
+
+
+
+
+/* Make it responsive */ 
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.wrapper {
+
+		width: 970px;
+
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.wrapper {
+
+		width: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.wrapper {
+
+		width: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	.wrapper {
+
+		width: 100%;
+
+	}
+
+}
+

@@ -15,7 +15,7 @@ class SiteOffersController extends BaseController {
 
 		// sort & paginate
 		$entries = Offer::orderBy($sort, $order)->paginate(5);
-		
+
 		return \View::make('offers')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));
     }
 	

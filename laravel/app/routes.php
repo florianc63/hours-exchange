@@ -18,7 +18,7 @@ Route::pattern('id', '\d+');
 Route::get('/', array('as' => 'home', function() 
 {
 	$homepage_id = Settings::where('key', 'homepage')->first()->value;
-    
+
 	return View::make('page')
 				->with('entry', Page::where('id', $homepage_id)->first());
 				//->with('entry', Page::orderBy('created_at', 'desc')->first());

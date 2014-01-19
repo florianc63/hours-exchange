@@ -4,6 +4,9 @@ class UserOffersController extends BaseController {
 
     public function index()
     {
+    	// get user id
+    	$user_id = Sentry::getUser()->id;
+
 		// add allowable columns to search/sort on
 		$allowed_cols = array('created_at'); 
 		
@@ -14,7 +17,7 @@ class UserOffersController extends BaseController {
 		$order = Input::get('order') === 'asc' ? 'asc' : 'desc';
 
 		// sort & paginate
-		$entries = Offer::orderBy($sort, $order)->paginate(10);
+		$entries = Offer::orderBy($sort, $order)->where('user_id', $user_id)->paginate(10);
 		
 		return \View::make('admin.offers.index')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));
     }
@@ -56,7 +59,7 @@ class UserOffersController extends BaseController {
 			$offer->location   	          = Input::get('location');
 			$offer->image   	          = $image;
 			$offer->visible   	          = 'yes';
-			$offer->save();		
+			$offer->save();
 			 
 			Session::flash('success', 'Entry saved successfully.');
 
