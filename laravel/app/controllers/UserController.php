@@ -344,8 +344,14 @@ class UserController extends BaseController {
 				return Redirect::to('admin/users/login')->withErrors($v)->withInput();
 			}
 
-			//Login was succesful.  
-			return Redirect::to('/');
+			//Login was succesful.
+			if ($user->hasAccess('admin'))
+			
+				return Redirect::to('/admin/users');
+
+			else 
+
+				return Redirect::to('/');
 		}
 	}
 
