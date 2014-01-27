@@ -122,7 +122,7 @@ Edit offer
 
 				{{ Form::text('date_expire', null, array('class' => 'form-control')) }}
 
-				<span>Year / Month / Day</span>
+				<span>Year / Month / Day Example: {{ date('Y/m/d') }}</span>
 
 				{{ ($errors->has('date_expire') ? $errors->first('date_expire', '<span class="input-error">:message</span>') : '') }}
 
