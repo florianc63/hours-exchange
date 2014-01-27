@@ -345,13 +345,14 @@ class UserController extends BaseController {
 			}
 
 			//Login was succesful.
-			if ($user->hasAccess('admin'))
-			
-				return Redirect::to('/admin/users');
-
+			if ($user->hasAccess('admin')) 
+			{
+				return Redirect::to('/admin');
+			} 
 			else 
-
+			{
 				return Redirect::to('/');
+			}
 		}
 	}
 
