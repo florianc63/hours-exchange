@@ -270,7 +270,14 @@ class UserController extends BaseController {
 	public function getLogin()
 	{
 		// Show the register form
-		return View::make('admin.users.login');
+		if (Sentry::check()) 
+		{
+			return Redirect::to('');
+		}
+		else 
+		{
+			return View::make('admin.users.login');
+		}
 	}
 
 	public function postLogin() 
