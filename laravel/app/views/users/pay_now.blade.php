@@ -3,6 +3,8 @@
 {{ Form::open(array('route' => array('pay.now'), 'class' => 'form-horizontal')) }}
 
 	{{ Form::hidden('entry_id', $entry->id) }}
+	{{ Form::hidden('seller_id', $entry->author->id) }}
+
 
 	<div class="form-group">
         {{ Form::label('qty', 'Quantity', array('class' => 'col-lg-3 control-label')) }}

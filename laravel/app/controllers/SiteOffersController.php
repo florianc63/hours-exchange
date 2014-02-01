@@ -24,26 +24,29 @@ class SiteOffersController extends BaseController {
     }
 
 
-    public function postPayNow($id) {
-
-		$offer = new Offer::find($id);
-
-		if($offer->validate($id))
-		{
-			$offer->qty = Input::get('qty');
+    public function postPayNow() {
 		
-			// Save user services
-			$user = User::find($user_details->user_id);
-			$user->services()->sync(Input::get('services'));		
-			
-			Session::flash('success', 'The hours were reserved, you can send a personal message to discuss the details of this transaction.');
+		$entry_id   = Input::get('entry_id');
+		$qty 		= Input::get('qty');
+		$seller_id  = Input::get('seller_id');
+		
+		$offer 		 = Offer::find($entry_id);		
 
-			return Redirect::route('');
-		}
-		else
-		{
-			return Redirect::back()->withInput()->withErrors($user_details->errors());
-		}
+		$transaction = new Transaction;
+
+		$transaction->entity_type = 'offer';
+		$transaction->entity_id	  = $offer->id;
+		$transaction->buyer_id    = Sentry::getUser()->getId();
+		$transaction->seller_id   = $offer->author->id;
+		$transaction->value 	  = $qty * $offer->price;
+		$transaction->save();
+
+		$transaction->entity->qty -= $qty;
+		$transaction->entity->save();
+
+		Session::flash('success', 'The hours were reserved, you can send a personal message to discuss the details of this transaction.');
+
+		return Redirect::route('user.profile', array('id' => $offer->author->id));
 	}
 
 }
