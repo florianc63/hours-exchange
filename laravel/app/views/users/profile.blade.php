@@ -1,14 +1,12 @@
 @extends('_layouts.default')
 
-
-
 {{-- Web site Title --}}
 
 @section('title')
 
 @parent
 
-Offers
+{{ $user->first_name }} {{ $user->last_name }} Profile
 
 @stop
 
@@ -20,7 +18,7 @@ Offers
 
  
 
-	<h2>Offers</h2>
+	<h2>{{ $user->first_name }} {{ $user->last_name }}'s Offers</h2>
 
  	
 
@@ -56,6 +54,11 @@ Offers
 
 				{{{ Str::limit($entry->body, 100) }}}
 
+				{{ Form::open(array('action' => array('SiteOffersController@getOffer', $entry->slug))) }}
+					
+
+					{{ Form::submit('Pay now!'); }}
+				{{ Form::close() }}
 			</div>
 
 		</div>

@@ -24,6 +24,10 @@ Route::get('/', array('as' => 'home', function()
 				//->with('entry', Page::orderBy('created_at', 'desc')->first());
 }));
 
+
+// Offers
+Route::get('users/{id}',   		  array('as' => 'user.profile',      'uses' => 'SiteUserProfileController@getIndex'));
+
 // Offers
 Route::get('offers',   			  array('as' => 'offer.list',      	 'uses' => 'SiteOffersController@getIndex'));
 Route::get('offers/{slug}',   	  array('as' => 'offer',      		 'uses' => 'SiteOffersController@getOffer'));

@@ -25,4 +25,21 @@ class Offer extends Elegant {
     {
         return $this->belongsTo('Service', 'service_id');
     }
+
+    public function getOffers($input_sort, $input_order, $user_id = null) {
+
+        // add allowable columns to search/sort on
+        $allowed_cols = array('created_at'); 
+        
+        // default column to sort 'created_at'
+        $sort = in_array($input_sort, $allowed_cols) ? $input_sort : 'created_at'; 
+        
+        // default order 'desc'
+        $order = $input_order === 'asc' ? 'asc' : 'desc';
+
+        if($user_id != null)
+            return Offer::where('user_id', $user_id)->orderBy($sort, $order)->paginate(5);
+        else
+            return Offer::orderBy($sort, $order)->paginate(5);
+    }
 }
