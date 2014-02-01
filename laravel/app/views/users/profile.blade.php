@@ -54,11 +54,8 @@
 
 				{{{ Str::limit($entry->body, 100) }}}
 
-				{{ Form::open(array('action' => array('SiteOffersController@getOffer', $entry->slug))) }}
-					
+				@include('users.pay_now')
 
-					{{ Form::submit('Pay now!'); }}
-				{{ Form::close() }}
 			</div>
 
 		</div>

@@ -189,6 +189,9 @@ return array(
 		'UserDetail'  	  => 'App\Models\UserDetail',
 		'Service'  		  => 'App\Models\Service',
 		'Settings'  	  => 'App\Models\Settings',
+		'Transaction'	  => 'App\Models\Transaction',
+		'Bid'			  => 'App\Models\Bid',	
+		'Message'		  => 'App\Models\Message',
 	),
 
 );

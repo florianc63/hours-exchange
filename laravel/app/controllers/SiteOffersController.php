@@ -22,5 +22,28 @@ class SiteOffersController extends BaseController {
 		else
 			return View::make('offer')->with('entry', $offer);
     }
- 
+
+
+    public function postPayNow($id) {
+
+		$offer = new Offer::find($id);
+
+		if($offer->validate($id))
+		{
+			$offer->qty = Input::get('qty');
+		
+			// Save user services
+			$user = User::find($user_details->user_id);
+			$user->services()->sync(Input::get('services'));		
+			
+			Session::flash('success', 'The hours were reserved, you can send a personal message to discuss the details of this transaction.');
+
+			return Redirect::route('');
+		}
+		else
+		{
+			return Redirect::back()->withInput()->withErrors($user_details->errors());
+		}
+	}
+
 }

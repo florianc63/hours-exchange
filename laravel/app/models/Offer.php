@@ -25,6 +25,14 @@ class Offer extends Elegant {
     {
         return $this->belongsTo('Service', 'service_id');
     }
+    public function transactions()
+    {
+        return $this->morphMany('Transaction', 'entity');
+    }
+    public function messages()
+    {
+        return $this->morphMany('Message', 'entity');
+    }
 
     public function getOffers($input_sort, $input_order, $user_id = null) {
 
@@ -42,4 +50,5 @@ class Offer extends Elegant {
         else
             return Offer::orderBy($sort, $order)->paginate(5);
     }
+
 }

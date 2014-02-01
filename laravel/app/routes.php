@@ -25,10 +25,11 @@ Route::get('/', array('as' => 'home', function()
 }));
 
 
-// Offers
+// Member profiles
 Route::get('users/{id}',   		  array('as' => 'user.profile',      'uses' => 'SiteUserProfileController@getIndex'));
 
 // Offers
+Route::post('offers/pay_now', 	  array('as' => 'pay.now', 			 'uses' => 'SiteOffersController@postPayNow'));
 Route::get('offers',   			  array('as' => 'offer.list',      	 'uses' => 'SiteOffersController@getIndex'));
 Route::get('offers/{slug}',   	  array('as' => 'offer',      		 'uses' => 'SiteOffersController@getOffer'));
 

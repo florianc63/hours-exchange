@@ -5,7 +5,7 @@ class SiteUserProfileController extends BaseController {
 	public function getIndex($user_id) {
 
 		$offers = new Offer;
-		$user = Sentry::getUser();
+		$user = User::find($user_id);
 		$sort  = Input::get('sort');
 		$order = Input::get('order');
 
