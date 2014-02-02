@@ -1,5 +1,7 @@
 <?php namespace App\Models;
 
+use Cartalyst\Sentry\Facades\Laravel\Sentry;
+
 class Message extends Elegant {
 
 	protected $table = 'messages';
@@ -12,12 +14,24 @@ class Message extends Elegant {
         'from_id'      => 'required',
         'to_id'        => 'required',
         'subject'      => 'required',
-        'body'         => 'required|min:10',
+        'body'         => '',
     );
 
-    public function entity()
+    public function messageable()
     {
         return $this->morphTo();
     }
 
+    public function sendMessage($entity_type, $entity_id, $to_id, $subject, $body) {
+
+        $this->messageable_type  = $entity_type;
+        $this->messageable_id    = $entity_id;
+        $this->from_id           = Sentry::getUser()->getId();
+        $this->to_id             = $to_id;
+        $this->subject           = $subject;
+        $this->body              = $body;
+        $this->save();
+
+        return $this;
+    }
 }

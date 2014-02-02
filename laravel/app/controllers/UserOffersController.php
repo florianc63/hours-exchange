@@ -53,6 +53,7 @@ class UserOffersController extends BaseController {
 			$offer->price   	          = Input::get('price');
 			$offer->date_expire   	      = Input::get('date_expire');
 			$offer->qty   	              = Input::get('qty');
+			$offer->remaining   	      = Input::get('qty');
 			$offer->location   	          = Input::get('location');
 			$offer->image   	          = $image;
 			$offer->visible   	          = 'yes';
@@ -101,6 +102,7 @@ class UserOffersController extends BaseController {
 			$offer->price   	          = Input::get('price');
 			$offer->date_expire   	      = Input::get('date_expire');
 			$offer->qty   	              = Input::get('qty');
+			$offer->remaining   	      = Input::get('qty');
 			$offer->location   	          = Input::get('location');
 			$offer->image   	          = $image;
 			//$offer->visible   	          = 'yes';

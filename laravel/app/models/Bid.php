@@ -15,7 +15,7 @@ class Bid extends Elegant {
 
     public function messages()
     {
-        return $this->morphMany('Message', 'entity')
+        return $this->morphMany('Message', 'messageable')
     }
 /*
     public function request()

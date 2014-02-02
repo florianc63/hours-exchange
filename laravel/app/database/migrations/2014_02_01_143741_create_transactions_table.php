@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class CreateTransactionsTable extends Migration {
@@ -11,11 +12,11 @@ class CreateTransactionsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('transactions', function($table) {
+		Schema::create('transactions', function(Blueprint $table) {
 
 			$table->increments('id');
-			$table->string('entity_type');
-			$table->integer('entity_id');
+			$table->string('transactionable_type');
+			$table->integer('transactionable_id');
 			$table->integer('buyer_id');
 			$table->integer('seller_id');
 			$table->float('value');

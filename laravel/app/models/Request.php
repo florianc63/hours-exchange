@@ -1,8 +1,8 @@
 <?php namespace App\Models;
 
-class Offer extends Elegant {
+class Request extends Elegant {
 
-	protected $table = 'offers';
+	protected $table = 'requests';
 
 	protected $guarded = array();
 
@@ -10,8 +10,7 @@ class Offer extends Elegant {
         'title'        => 'required|min:3',
         'service_id'   => 'required',
         'body'         => 'required|min:10',
-		'price'        => array('required', 'regex:/^[0-9]*(\.[0-9]+)?$/'),			
-        'qty'          => 'required|numeric|between:1,50',
+		'price'        => array('required', 'regex:/^[0-9]*(\.[0-9]+)?$/'),
         'date_expire'  => 'required|date',
         'location'     => 'required|min:3',
         'image'        => 'image|max:3000'
@@ -34,7 +33,7 @@ class Offer extends Elegant {
         return $this->morphMany('Message', 'messageable');
     }
 
-    public function getOffers($input_sort, $input_order, $user_id = null) {
+    public function getRequests($input_sort, $input_order, $user_id = null) {
 
         // add allowable columns to search/sort on
         $allowed_cols = array('created_at'); 
@@ -46,9 +45,9 @@ class Offer extends Elegant {
         $order = $input_order === 'asc' ? 'asc' : 'desc';
 
         if($user_id != null)
-            return Offer::where('user_id', $user_id)->orderBy($sort, $order)->paginate(5);
+            return HxRequest::where('user_id', $user_id)->orderBy($sort, $order)->paginate(5);
         else
-            return Offer::orderBy($sort, $order)->paginate(5);
+            return HxRequest::orderBy($sort, $order)->paginate(5);
     }
 
 }

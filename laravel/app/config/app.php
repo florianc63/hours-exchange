@@ -192,6 +192,7 @@ return array(
 		'Transaction'	  => 'App\Models\Transaction',
 		'Bid'			  => 'App\Models\Bid',	
 		'Message'		  => 'App\Models\Message',
+		'HxRequest'		  => 'App\Models\Request',
 	),
 
 );

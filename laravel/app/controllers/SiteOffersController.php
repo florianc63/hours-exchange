@@ -26,25 +26,33 @@ class SiteOffersController extends BaseController {
 
     public function postPayNow() {
 		
-		$entry_id   = Input::get('entry_id');
-		$qty 		= Input::get('qty');
-		$seller_id  = Input::get('seller_id');
-		
-		$offer 		 = Offer::find($entry_id);		
+		$offer 		 = Offer::find(Input::get('entry_id'));
+		$demand 	 = Input::get('demand');
+		$subject 	 = Input::get('subject');
+		$body 		 = Input::get('body');
+		$message_status = 'No message was sent.';
+
+		if($offer->remaining - $demand < 0) {
+
+			Session::flash('error', 'Not enough jobs left in this offer');
+
+			return Redirect::route('user.profile', array('id' => $offer->author->id));
+		}
 
 		$transaction = new Transaction;
+		$transaction->setTransaction($offer, $demand);
 
-		$transaction->entity_type = 'offer';
-		$transaction->entity_id	  = $offer->id;
-		$transaction->buyer_id    = Sentry::getUser()->getId();
-		$transaction->seller_id   = $offer->author->id;
-		$transaction->value 	  = $qty * $offer->price;
-		$transaction->save();
+		$transaction->transactionable->remaining -= $demand;
+		$transaction->transactionable->save();
 
-		$transaction->entity->qty -= $qty;
-		$transaction->entity->save();
+		if($subject == '') {
+			$message = new Message;
+			$message->sendMessage('transaction', $transaction->id, $offer->author->id, $subject, $body);
 
-		Session::flash('success', 'The hours were reserved, you can send a personal message to discuss the details of this transaction.');
+			$message_status = 'Message was sent.';
+		}
+
+		Session::flash('success', 'The hours were reserved. ' . $message_status);
 
 		return Redirect::route('user.profile', array('id' => $offer->author->id));
 	}
