@@ -42,9 +42,6 @@ class SiteOffersController extends BaseController {
 		$transaction = new Transaction;
 		$transaction->setTransaction($offer, $demand);
 
-		$transaction->transactionable->remaining -= $demand;
-		$transaction->transactionable->save();
-
 		if($subject == '') {
 			$message = new Message;
 			$message->sendMessage('transaction', $transaction->id, $offer->author->id, $subject, $body);

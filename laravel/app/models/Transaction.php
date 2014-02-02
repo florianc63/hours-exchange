@@ -25,14 +25,17 @@ class Transaction extends Elegant {
         return $this->morphMany('Message', 'messageable');
     }
 
-    public function setTransaction($offer, $qty) {
+    public function setTransaction($offer, $demand) {
 
         $this->transactionable_type  = 'offer';
         $this->transactionable_id    = $offer->id;
         $this->buyer_id              = Sentry::getUser()->getId();
         $this->seller_id             = $offer->author->id;
-        $this->value                 = $qty * $offer->price;
+        $this->value                 = $demand * $offer->price;
         $this->save();
+
+        $this->transactionable->remaining -= $demand;
+        $this->transactionable->save();
 
         return $this;
     }
