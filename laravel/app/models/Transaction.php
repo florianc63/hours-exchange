@@ -32,7 +32,7 @@ class Transaction extends Elegant {
         $this->buyer_id              = Sentry::getUser()->getId();
         $this->seller_id             = $offer->author->id;
         $this->value                 = $demand * $offer->price;
-        $this->save();
+        // $this->save();
 
         $this->transactionable->remaining -= $demand;
         $this->transactionable->save();

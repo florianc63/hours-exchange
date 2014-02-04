@@ -991,4 +991,12 @@ class UserController extends BaseController {
 		return $password;
 	}
 
+	public function getUsers() {
+
+		$users = User::all();
+		// $sort  = Input::get('sort');
+		// $order = Input::get('order');
+
+		return \View::make('users.list')->with(array('users' => $users));
+	}
 }

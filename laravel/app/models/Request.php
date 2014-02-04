@@ -45,9 +45,9 @@ class Request extends Elegant {
         $order = $input_order === 'asc' ? 'asc' : 'desc';
 
         if($user_id != null)
-            return HxRequest::where('user_id', $user_id)->orderBy($sort, $order)->paginate(5);
+            return \HxRequest::where('user_id', $user_id)->orderBy($sort, $order)->paginate(5);
         else
-            return HxRequest::orderBy($sort, $order)->paginate(5);
+            return \HxRequest::orderBy($sort, $order)->paginate(5);
     }
 
 }

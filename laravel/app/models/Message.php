@@ -31,6 +31,14 @@ class Message extends Elegant {
         $this->subject           = $subject;
         $this->body              = $body;
         $this->save();
+        $data['subject'] = $subject;
+        $data['body']    = $body;
+
+        //send email with link to activate.
+        Mail::send('emails.auth.welcome', $data, function($m) use($data)
+        {
+            $m->to('florianc63@gmail.com'/*$data['email']*/)->subject('Welcome to Hour Exchange and thanks for signing up!');
+        });
 
         return $this;
     }

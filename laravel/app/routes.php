@@ -24,8 +24,8 @@ Route::get('/', array('as' => 'home', function()
 				//->with('entry', Page::orderBy('created_at', 'desc')->first());
 }));
 
-
 // Member profiles
+Route::get('users',				  array('as' => 'user.list', 		 'uses' => 'UserController@getUsers'));
 Route::get('users/{id}',   		  array('as' => 'user.profile',      'uses' => 'SiteUserProfileController@getIndex'));
 
 // Offers

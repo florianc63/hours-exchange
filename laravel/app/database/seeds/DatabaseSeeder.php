@@ -15,7 +15,10 @@ class DatabaseSeeder extends Seeder {
 		$this->command->info('Sentry tables seeded!');
 		
 		$this->call('OffersTableSeeder');
-		$this->command->info('Offers table seeded!');		
+		$this->command->info('Offers table seeded!');	
+		
+		$this->call('RequestsTableSeeder');
+		$this->command->info('Requests table seeded!');
 		
 		$this->call('PagesTableSeeder');
 		$this->command->info('Pages table seeded!');
