@@ -1,6 +1,7 @@
 <?php namespace App\Models;
 
 use Cartalyst\Sentry\Facades\Laravel\Sentry;
+use Illuminate\Support\Facades\Mail;
 
 class Message extends Elegant {
 
@@ -21,6 +22,10 @@ class Message extends Elegant {
     {
         return $this->morphTo();
     }
+    public function message()
+    {
+        return $this->morphMany('Message', 'messageable');
+    }
 
     public function sendMessage($entity_type, $entity_id, $to_id, $subject, $body) {
 
@@ -35,9 +40,9 @@ class Message extends Elegant {
         $data['body']    = $body;
 
         //send email with link to activate.
-        Mail::send('emails.auth.welcome', $data, function($m) use($data)
+        Mail::send('emails.message', $data, function($m) use($data)
         {
-            $m->to('florianc63@gmail.com'/*$data['email']*/)->subject('Welcome to Hour Exchange and thanks for signing up!');
+            $m->to('florianc63@gmail.com'/*$data['email']*/)->subject('User {{ Sentry::getUser()->getName() }} sent a message!');
         });
 
         return $this;

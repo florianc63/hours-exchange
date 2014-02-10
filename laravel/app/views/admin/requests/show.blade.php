@@ -74,6 +74,14 @@ Show Request
 
 	</dl>
 
- 
+ 	@foreach ($bids as $bid)
+ 	<dl class="dl-horizontal">
+ 		<dt>Value:</dt><dd>{{ $bid->value }}</dd>
+ 		@foreach ($bid->messages as $message)
+	 		<dt>Subject:</dt><dd>{{ $bid->messages->subject }}</dd>
+	 		<dt>Body:</dt><dd>{{ $bid->messages->body }}</dd>
+ 		@endforeach
+ 	</dl>
+ 	@endforeach
 
 @stop

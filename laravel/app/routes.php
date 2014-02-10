@@ -25,8 +25,10 @@ Route::get('/', array('as' => 'home', function()
 }));
 
 // Member profiles
-Route::get('users',				  array('as' => 'user.list', 		 'uses' => 'UserController@getUsers'));
-Route::get('users/{id}',   		  array('as' => 'user.profile',      'uses' => 'SiteUserProfileController@getIndex'));
+Route::get('users',				  			array('as' => 'user.list', 		 'uses' => 'UserController@getUsers'));
+Route::get('users/{id}',   		  			array('as' => 'user.profile',    'uses' => 'SiteUserProfileController@getIndex'));
+Route::get('users/{id}/offers',   			array('as' => 'user.offers',     'uses' => 'SiteUserProfileController@getOffers'));
+Route::get('users/{id}/requests',   		array('as' => 'user.requests',   'uses' => 'SiteUserProfileController@getRequests'));
 
 // Offers
 Route::post('offers/pay_now', 	  array('as' => 'pay.now', 			 'uses' => 'SiteOffersController@postPayNow'));
@@ -34,8 +36,12 @@ Route::get('offers',   			  array('as' => 'offer.list',      	 'uses' => 'SiteOf
 Route::get('offers/{slug}',   	  array('as' => 'offer',      		 'uses' => 'SiteOffersController@getOffer'));
 
 // Requests
+Route::post('requests/bid',		  array('as' => 'bid',				 'uses' => 'SiteRequestsController@postBidNow'));
 Route::get('requests',   		  array('as' => 'request.list',      'uses' => 'SiteRequestsController@getIndex'));
 Route::get('requests/{slug}',     array('as' => 'request',      	 'uses' => 'SiteRequestsController@getRequest'));
+
+// Messages
+Route::post('message',	  	  	  array('as' => 'message',			 'uses' => 'MessagesController@postMessage'));
 
 // Single page
 Route::get('{slug}', array('as' => 'page', function($slug) 

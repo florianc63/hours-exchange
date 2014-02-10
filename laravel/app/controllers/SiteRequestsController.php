@@ -23,35 +23,28 @@ class SiteRequestsController extends BaseController {
 			return View::make('request')->with('entry', $request);
     }
 
-/*
-    public function postPayNow() {
+    public function postBidNow() {
 		
-		$request 		 = HxRequest::find(Input::get('entry_id'));
-		$demand 	 = Input::get('demand');
+		$request 	 = HxRequest::find(Input::get('entry_id'));
+		$price 	 	 = Input::get('price');
 		$subject 	 = Input::get('subject');
 		$body 		 = Input::get('body');
 		$message_status = 'No message was sent.';
 
-		if($request->remaining - $demand < 0) {
+		$bid = new Bid;
+		$bid->setBid($request, $price);
 
-			Session::flash('error', 'Not enough jobs left in this request');
+		if($subject != '') {
 
-			return Redirect::route('user.profile', array('id' => $request->author->id));
-		}
-
-		$transaction = new Transaction;
-		$transaction->setTransaction($request, $demand);
-
-		if($subject == '') {
 			$message = new Message;
-			$message->sendMessage('transaction', $transaction->id, $request->author->id, $subject, $body);
+			$message->sendMessage('bid', $bid->id, $request->author->id, $subject, $body);
 
-			$message_status = 'Message was sent.';
+			$message_status = 'Message was attached to bid.';
 		}
 
-		Session::flash('success', 'The hours were reserved. ' . $message_status);
+		Session::flash('success', 'Bid was sent. ' . $message_status);
 
 		return Redirect::route('user.profile', array('id' => $request->author->id));
 	}
-*/
+
 }

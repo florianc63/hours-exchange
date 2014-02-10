@@ -65,6 +65,10 @@ class User extends \Cartalyst\Sentry\Users\Eloquent\User implements UserInterfac
     {
         return $this->hasMany('Skill');
     }
+    public function messages()
+    {
+        return $this->morphMany('Message', 'messageable');
+    }
 	public function services()
     {
 //        return $this->belongsToMany('Service', 'service_id');

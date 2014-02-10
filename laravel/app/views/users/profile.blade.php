@@ -16,56 +16,48 @@
 
 @section('content')
 
- 
+	<h2>{{ $user->first_name }} {{ $user->last_name }}'s Profile</h2>
 
-	<h2>{{ $user->first_name }} {{ $user->last_name }}'s Offers</h2>
+	<dl class="dl-horizontal">
+		<dt>About me: </dt><dd>{{ $user->details->descr }}</dd>
+		<dt>Mobile: </dt><dd>{{ $user->details->mobile }}</dd>
+	 	<dt>Adress: </dt><dd>{{ $user->details->address }}</dd>
+	 	<dt>City: </dt><dd>{{ $user->details->city }}</dd>
+	 	<dt>Country: </dt><dd>{{ $user->details->country }}</dd>
+	 	<dt>LinkedIn Profile:</dt><dd>{{ $user->details->linkedin }}</dd>
+	 	<dt>Job: </dt><dd>{{ $user->details->job_status }}</dd>
+	</dl>
 
- 	
+	<h4>Send a message to {{ $user->first_name }}:</h4>
 
-	@foreach ($entries as $entry)
+	{{ Form::open(array('route' => array('message'), 'class' => 'form-horizontal')) }}
 
-	
+		{{ Form::hidden('user_id', $user->id) }}
 
-		<div class="row">
-
-			<div class="col-lg-3">
-
-				@if ($entry->image != '')
-
-					<img src="{{{ $entry->image }}}" width="220"/>
-
-				@else
-
-					<img src="{{ asset('assets/img/hx-logo-small.png') }}" width="55"/>
-
-				@endif
-
+		<div class="form-group">
+	        {{ Form::label('subject', 'Subject', array('class' => 'col-lg-3 control-label')) }}
+			<div class="col-lg-6">
+				{{ Form::text('subject', null, array('rows' => 3, 'class' => 'form-control')) }}
+				{{ ($errors->has('subject') ? $errors->first('subject', '<span class="input-error block">:message</span>') : '') }}
 			</div>
+	    </div>
 
-			<div class="col-lg-9">
-
-				<h3><a href="{{{ URL::route('offer', $entry->slug) }}}">{{{ $entry->title }}}</a> <small>({{{ $entry->price }}} hours)</small></h3>
-
-				<h5>Posted at {{ Carbon\Carbon::createFromTimestamp(strtotime($entry->created_at))->toFormattedDateString() }} &bull; by <a href="{{ URL::route('user.profile', array('id' => $entry->author->id)) }}">{{{ $entry->author->first_name }}} {{{ $entry->author->last_name }}}</a></h5>
-
-				<p>Service type: <strong>{{{ $entry->service->name }}}</strong></p>
-
-				<p>Original: <strong>{{{ $entry->qty}}}</strong></p>
-				
-				<p>Available: <strong>{{{ $entry->remaining }}}</strong></p>
-
-				{{{ Str::limit($entry->body, 100) }}}
-
+		<div class="form-group">
+	        {{ Form::label('body', 'Message', array('class' => 'col-lg-3 control-label')) }}
+			<div class="col-lg-6">
+				{{ Form::textarea('body', null, array('rows' => 3, 'class' => 'form-control')) }}
+				{{ ($errors->has('body') ? $errors->first('body', '<span class="input-error block">:message</span>') : '') }}
 			</div>
-
+	    </div>
+		
+	    <div class="form-group">
+			<div class="col-lg-offset-3 col-lg-9">
+				{{ Form::submit('Send', array('class' => 'btn btn-success btn-large btn-disabled')) }}
+			</div>
 		</div>
 
-	@endforeach
+	{{ Form::close() }}
 
-		
-
-	{{ $entries->addQuery('order',$order)->addQuery('sort', $sort)->links() }}
-
- 
-
+	<a href="{{ URL::route('user.offers', array('id' => $user->id) )}}"><h3>View {{ $user->first_name }} {{ $user->last_name }} offers</h3></a>
+	<a href="{{ URL::route('user.requests', array('id' => $user->id) )}}"><h3>View {{ $user->first_name }} {{ $user->last_name }} requests</h3></a>
 @stop

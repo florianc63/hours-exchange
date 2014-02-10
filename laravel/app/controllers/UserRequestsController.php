@@ -21,7 +21,9 @@ class UserRequestsController extends BaseController {
 	
 	public function show($id)
     {
-        return \View::make('admin.requests.show')->with('request', HxRequest::find($id));
+    	$bids = Bid::where('request_id', '=', $id)->get();
+
+        return \View::make('admin.requests.show')->with(array('request' => HxRequest::find($id), 'bids' => $bids));
     }
  
     public function create()
