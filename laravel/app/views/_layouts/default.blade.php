@@ -170,6 +170,8 @@
 
 									<li {{ (Request::is('admin/requests*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/requests') }}"><span class="glyphicon glyphicon-chevron-right"></span>Requests</a></li>
 
+									<li {{ (Request::is('admin/messages*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/messages') }}"><span class="glyphicon glyphicon-chevron-right"></span>Messages</a></li>
+
 								</ul>
 
 							</div>

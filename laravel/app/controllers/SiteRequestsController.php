@@ -47,4 +47,17 @@ class SiteRequestsController extends BaseController {
 		return Redirect::route('user.profile', array('id' => $request->author->id));
 	}
 
+	public function acceptBid($bid_id) {
+	
+		$bid = Bid::find($bid_id);
+
+		$transaction = new Transaction;
+		$transaction->setTransaction('request', $bid->request_id, $bid->buyer_id, $bid->seller_id, $bid->value);
+
+		// to do: close request after bid is accepted
+		Session::flash('success', 'Bid accepted.');
+
+		return Redirect::back();
+	}
+
 }

@@ -27,7 +27,7 @@ class SiteOffersController extends BaseController {
     public function postPayNow() {
 		
 		$offer 		 = Offer::find(Input::get('entry_id'));
-		$demand 	 = Input::get('demand');
+		$demand 	 = Input::get('demand') * $offer->price;
 		$subject 	 = Input::get('subject');
 		$body 		 = Input::get('body');
 		$message_status = 'No message was sent.';
@@ -40,10 +40,10 @@ class SiteOffersController extends BaseController {
 		}
 
 		$transaction = new Transaction;
-		$transaction->setTransaction('offer', $offer, $demand);
+		$transaction->setTransaction('offer', $offer, Sentry::getUser()->getId(), $offer->author->id, $demand);
 
-        $this->transactionable->remaining -= $value;
-        $this->transactionable->save();
+        $transaction->transactionable->remaining -= $demand;
+        $transaction->transactionable->save();
         
 		if($subject != '') {
 

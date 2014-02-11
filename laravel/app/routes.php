@@ -36,9 +36,10 @@ Route::get('offers',   			  array('as' => 'offer.list',      	 'uses' => 'SiteOf
 Route::get('offers/{slug}',   	  array('as' => 'offer',      		 'uses' => 'SiteOffersController@getOffer'));
 
 // Requests
-Route::post('requests/bid',		  array('as' => 'bid',				 'uses' => 'SiteRequestsController@postBidNow'));
-Route::get('requests',   		  array('as' => 'request.list',      'uses' => 'SiteRequestsController@getIndex'));
-Route::get('requests/{slug}',     array('as' => 'request',      	 'uses' => 'SiteRequestsController@getRequest'));
+Route::get('requests/accept/bid/{id}',	array('as' => 'accept.bid',		'uses' => 'SiteRequestsController@acceptBid'));
+Route::post('requests/bid',		  		array('as' => 'bid',			'uses' => 'SiteRequestsController@postBidNow'));
+Route::get('requests',   		  		array('as' => 'request.list',   'uses' => 'SiteRequestsController@getIndex'));
+Route::get('requests/{slug}',     		array('as' => 'request',      	'uses' => 'SiteRequestsController@getRequest'));
 
 // Messages
 Route::post('message',	  	  	  array('as' => 'message',			 'uses' => 'MessagesController@postMessage'));
@@ -82,6 +83,12 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
 	Route::resource('offers', 'UserOffersController');
 	Route::resource('requests', 'UserRequestsController');	
 	Route::resource('userdetails', 'UserDetailsController', array('only' => array('edit', 'update')));
+
+	Route::get('messages', 					array('as' => 'admin.messages.index', 		'uses' => 'UserMessagesController@index'));
+	Route::get('messages/{id}', 			array('as' => 'admin.messages.show', 		'uses' => 'UserMessagesController@show'));
+	Route::get('messages/reply/{id}', 		array('as' => 'admin.messages.reply', 		'uses' => 'UserMessagesController@getReply'));
+	Route::post('messages/reply/send', 		array('as' => 'admin.messages.reply.send', 	'uses' => 'UserMessagesController@postReply'));
+	Route::delete('messages/destroy/{id}', 	array('as' => 'admin.messages.destroy', 	'uses' => 'UserMessagesController@destroy'));
 });
 
 

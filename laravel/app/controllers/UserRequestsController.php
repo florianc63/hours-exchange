@@ -23,6 +23,14 @@ class UserRequestsController extends BaseController {
     {
     	$bids = Bid::where('request_id', '=', $id)->get();
 
+    	foreach($bids as $bid) {
+
+    		$bid->user = Sentry::findUserById($bid->seller_id);
+    		$messages = Message::where('messageable_type', '=', 'bid')->where('messageable_id', '=', $bid->id)->get();
+
+			$bid->message_collection = $messages;
+    	}
+
         return \View::make('admin.requests.show')->with(array('request' => HxRequest::find($id), 'bids' => $bids));
     }
  

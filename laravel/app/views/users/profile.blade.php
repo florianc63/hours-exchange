@@ -30,6 +30,7 @@
 
 	<h4>Send a message to {{ $user->first_name }}:</h4>
 
+	@if ( Sentry::check() )
 	{{ Form::open(array('route' => array('message'), 'class' => 'form-horizontal')) }}
 
 		{{ Form::hidden('user_id', $user->id) }}
@@ -58,6 +59,13 @@
 
 	{{ Form::close() }}
 
+	@else
+
+		<div class="alert alert-danger alert-block">
+			<h4>You must be logged on to send a message to {{ $user->first_name }}</h4>
+		</div>
+
+	@endif
 	<a href="{{ URL::route('user.offers', array('id' => $user->id) )}}"><h3>View {{ $user->first_name }} {{ $user->last_name }} offers</h3></a>
 	<a href="{{ URL::route('user.requests', array('id' => $user->id) )}}"><h3>View {{ $user->first_name }} {{ $user->last_name }} requests</h3></a>
 @stop
