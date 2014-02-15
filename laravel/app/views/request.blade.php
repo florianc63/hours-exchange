@@ -36,4 +36,15 @@
 
 	@include('users.bid')
 
+	@foreach ($bids as $bid)
+ 	<div class="col-xs-9">
+	 	<span><strong>Bid by:</strong></span><span> {{ $bid->user->first_name }} {{ $bid->user->last_name }}</span>
+	 	<dl class="dl-horizontal">
+	 		<dt>Offers to do job for:</dt>
+	 		<dd>{{ $bid->value }} hours</dd>
+	 	</dl>
+	 	</div>
+ 	<div class="clearfix"></div>
+ 	@endforeach
+
 @stop

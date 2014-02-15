@@ -16,11 +16,17 @@ class SiteRequestsController extends BaseController {
     public function getRequest($slug)
     {
 		$request = HxRequest::where('slug', $slug)->first();
-		
+		$bids 	 = Bid::where('request_id', '=', $request->id)->get();
+
+		foreach($bids as $bid) {
+
+    		$bid->user = Sentry::findUserById($bid->seller_id);
+    	}
+
 		if( is_null($request) )
 			App::abort('404');
 		else
-			return View::make('request')->with('entry', $request);
+			return View::make('request')->with(array('entry' => $request, 'bids' => $bids));
     }
 
     public function postBidNow() {

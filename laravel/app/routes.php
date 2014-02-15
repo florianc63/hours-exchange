@@ -84,6 +84,8 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
 	Route::resource('requests', 'UserRequestsController');	
 	Route::resource('userdetails', 'UserDetailsController', array('only' => array('edit', 'update')));
 
+	Route::get('bids',						array('as' => 'admin.bids.index', 			'uses' => 'UserBidsController@index'));
+	
 	Route::get('messages', 					array('as' => 'admin.messages.index', 		'uses' => 'UserMessagesController@index'));
 	Route::get('messages/{id}', 			array('as' => 'admin.messages.show', 		'uses' => 'UserMessagesController@show'));
 	Route::get('messages/reply/{id}', 		array('as' => 'admin.messages.reply', 		'uses' => 'UserMessagesController@getReply'));

@@ -108,7 +108,7 @@
 
 					</div>
 
-					<div class="col-lg-6 top-bar">
+					<div class="col-lg-4 top-bar">
 
 						<input class="top-bar-input" type="text" value="Search..." />
 
@@ -120,7 +120,7 @@
 
 					</div>
 
-					<div class="col-lg-5">
+					<div class="col-lg-7">
 
 						@if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))
 
@@ -166,13 +166,16 @@
 
 									</li>	
 
-									<li {{ (Request::is('admin/offers*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/offers') }}"><span class="glyphicon glyphicon-chevron-right"></span>Offers</a></li>
+									<li {{ (Request::is('admin/offers*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/offers') }}"><span class="glyphicon glyphicon-chevron-right"></span>My Offers</a></li>
 
-									<li {{ (Request::is('admin/requests*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/requests') }}"><span class="glyphicon glyphicon-chevron-right"></span>Requests</a></li>
+									<li {{ (Request::is('admin/requests*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/requests') }}"><span class="glyphicon glyphicon-chevron-right"></span>My Requests</a></li>
 
-									<li {{ (Request::is('admin/messages*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/messages') }}"><span class="glyphicon glyphicon-chevron-right"></span>Messages</a></li>
+									<li {{ (Request::is('admin/messages*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/messages') }}"><span class="glyphicon glyphicon-chevron-right"></span>My Messages</a></li>
+
+									<li {{ (Request::is('admin/bids*') ? 'class="active"' : '') }}><a href="{{ URL::to('/admin/bids') }}"><span class="glyphicon glyphicon-chevron-right"></span>My Bids</a></li>
 
 								</ul>
+
 
 							</div>
 
