@@ -14,7 +14,7 @@ class UserOffersController extends BaseController {
 		$order = Input::get('order') === 'asc' ? 'asc' : 'desc';
 
 		// sort & paginate
-		$entries = Offer::orderBy($sort, $order)->paginate(10);
+		$entries = Offer::where('user_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
 		
 		return \View::make('admin.offers.index')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));
     }

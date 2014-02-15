@@ -14,7 +14,7 @@ class UserRequestsController extends BaseController {
 		$order = Input::get('order') === 'asc' ? 'asc' : 'desc';
 
 		// sort & paginate
-		$entries = HxRequest::orderBy($sort, $order)->paginate(10);
+		$entries = HxRequest::where('user_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
 		
 		return \View::make('admin.requests.index')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));
     }

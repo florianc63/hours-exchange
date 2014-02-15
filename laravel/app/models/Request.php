@@ -1,5 +1,7 @@
 <?php namespace App\Models;
 
+use Cartalyst\Sentry\Facades\Laravel\Sentry;
+
 class Request extends Elegant {
 
 	protected $table = 'requests';
@@ -43,9 +45,14 @@ class Request extends Elegant {
         
         // default order 'desc'
         $order = $input_order === 'asc' ? 'asc' : 'desc';
-
+/*
         if($user_id != null)
             return \HxRequest::where('user_id', $user_id)->orderBy($sort, $order)->paginate(5);
+        else
+            return \HxRequest::where('user_id', '!=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(5);
+*/
+        if (Sentry::check())
+            return \HxRequest::where('user_id', '!=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(5);
         else
             return \HxRequest::orderBy($sort, $order)->paginate(5);
     }

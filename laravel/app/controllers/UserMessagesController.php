@@ -14,7 +14,7 @@ class UserMessagesController extends BaseController {
 		$order = Input::get('order') === 'asc' ? 'asc' : 'desc';
 
 		// sort & paginate
-		$entries = Message::orderBy($sort, $order)->paginate(10);
+		$entries = Message::where('to_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
 
 		foreach($entries as $entry) {
 
