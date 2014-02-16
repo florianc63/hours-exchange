@@ -16,6 +16,16 @@ class UserRequestsController extends BaseController {
 		// sort & paginate
 		$entries = HxRequest::where('user_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
 		
+		foreach($entries as $entry) {
+
+			$bids = Bid::where('request_id', '=', $entry->id)->get();
+			if(count($bids) > 0) {
+				$entry->bids = count($bids);
+			} else {
+				$entry->bids = 'No bids yet';
+			}
+		}
+
 		return \View::make('admin.requests.index')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));
     }
 	

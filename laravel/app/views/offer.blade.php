@@ -28,7 +28,7 @@
 
 	<h5>Posted at {{ Carbon\Carbon::createFromTimestamp(strtotime($entry->created_at))->toFormattedDateString() }} &bull; by <a href="{{ URL::route('user.profile', array('id' => $entry->author->id)) }}">{{{ $entry->author->first_name }}} {{{ $entry->author->last_name }}}</a></h5>
 
-	<p>Available: <strong>{{{ $entry->qty }}}</strong></p>
+	<p>Available: <strong>{{{ $entry->remaining }}}</strong></p>
 
 	
 

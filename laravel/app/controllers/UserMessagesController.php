@@ -14,20 +14,26 @@ class UserMessagesController extends BaseController {
 		$order = Input::get('order') === 'asc' ? 'asc' : 'desc';
 
 		// sort & paginate
-		$entries = Message::where('to_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
+		$inbox = Message::where('to_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
+		$outbox  = Message::where('from_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
 
-		foreach($entries as $entry) {
+		foreach($inbox as $entry) {
 
 			$entry->user = Sentry::findUserById($entry->from_id);
 		}
 
-		return \View::make('admin.messages.index')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));
+		foreach($outbox as $entry) {
+			$entry->user_to = Sentry::findUserById($entry->to_id);
+		}
+
+		return \View::make('admin.messages.index')->with(array('inbox' => $inbox, 'outbox' => $outbox, 'sort' => $sort, 'order' => $order));
     }
 
     public function show($id)
     {
     	$message = Message::find($id);
-    	$message->user = Sentry::findUserById($message->from_id);
+    	$message->user_from = Sentry::findUserById($message->from_id);
+    	$message->user_to   = Sentry::findUserById($message->to_id);
 
         return \View::make('admin.messages.show')->with('entry', $message);
     }

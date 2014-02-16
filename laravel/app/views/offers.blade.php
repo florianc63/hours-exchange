@@ -52,7 +52,7 @@ Offers
 
 				<p>Service type: <strong>{{{ $entry->service->name }}}</strong></p>
 
-				<p>Available: <strong>{{{ $entry->qty }}}</strong></p>
+				<p>Available: <strong>{{{ $entry->remaining }}}</strong></p>
 
 				{{{ Str::limit($entry->body, 100) }}}
 

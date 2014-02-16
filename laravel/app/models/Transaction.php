@@ -33,11 +33,12 @@ class Transaction extends Elegant {
         $this->seller_id             = $seller_id;
         $this->value                 = $value;
         $this->save();
-
+/*
         if($entity_type == 'offer') {
-            $this->transactionable->remaining -= $value;
-            $this->transactionable->save();
-        }
+            $transaction = Transaction::find($this->id);
+
+            
+        }*/
         return $this;
     }
 

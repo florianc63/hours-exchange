@@ -44,7 +44,7 @@ Show Request
 
  	@foreach ($bids as $bid)
  	<div class="col-xs-9">
-	 	<span><strong>Bid by:</strong></span><span> {{ $bid->user->first_name }} {{ $bid->user->last_name }}</span>
+	 	<span><strong>Bid by:</strong></span><span> <a href="{{ URL::route('user.profile', array('id' => $bid->user->id)) }}">{{ $bid->user->first_name }} {{ $bid->user->last_name }}</a></span>
 	 	<p><a href="{{ URL::route('accept.bid', $bid->id) }}" class="btn btn-success btn-sm">Accept bid</a></p>
 	 	<dl class="dl-horizontal">
 	 		<dt>Offers to do job for:</dt>
