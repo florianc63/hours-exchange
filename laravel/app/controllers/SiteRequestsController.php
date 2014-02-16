@@ -50,7 +50,8 @@ class SiteRequestsController extends BaseController {
 
 		Session::flash('success', 'Bid was sent. ' . $message_status);
 
-		return Redirect::route('user.profile', array('id' => $request->author->id));
+		return Redirect::back()->withInput();
+		// return Redirect::route('user.profile', array('id' => $request->author->id));
 	}
 
 	public function acceptBid($bid_id) {

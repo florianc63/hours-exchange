@@ -46,14 +46,9 @@ class Offer extends Elegant {
         
         // default order 'desc'
         $order = $input_order === 'asc' ? 'asc' : 'desc';
-/*
+
         if($user_id != null)
             return Offer::where('user_id', $user_id)->orderBy($sort, $order)->paginate(5);
-        else
-            return 
-*/      
-        if (Sentry::check())
-            return Offer::where('user_id', '!=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(5);
         else
             return Offer::orderBy($sort, $order)->paginate(5);
     }

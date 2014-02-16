@@ -5,7 +5,7 @@
 		{{ Form::hidden('entry_id', $entry->id) }}	
 
 		<div class="form-group">
-	        {{ Form::label('price', 'Quantity', array('class' => 'col-lg-3 control-label')) }}
+	        {{ Form::label('price', 'Hours', array('class' => 'col-lg-3 control-label')) }}
 			<div class="col-lg-3">
 				{{ Form::text('price', null, array('class' => 'form-control')) }}
 				{{ ($errors->has('price') ? $errors->first('price', '<span class="input-error">:message</span>') : '') }}

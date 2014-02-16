@@ -14,7 +14,7 @@ class UserBidsController extends BaseController {
 		$order = Input::get('order') === 'asc' ? 'asc' : 'desc';
 
 		// sort & paginate
-		$entries = Bid::where('buyer_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
+		$entries = Bid::where('seller_id', '=', Sentry::getUser()->getId())->orderBy($sort, $order)->paginate(10);
 		
 		foreach($entries as $entry) {
 

@@ -9,7 +9,7 @@ Message
 {{-- Content --}}
 @section('content')
 
-    <p><span><strong>Sent by:</strong></span><span>{{{ $entry->user->first_name }}} {{{ $entry->user->last_name }}}</span></p>
+    <h2><strong>Sent by:</strong><a href="{{ URL::route('user.profile', array('id' => $entry->user->id)) }}">{{{ $entry->user->first_name }}} {{{ $entry->user->last_name }}}</a></h2>
 
 	<dl class="dl-horizontal">
 		<dt>Subject:</dt>
