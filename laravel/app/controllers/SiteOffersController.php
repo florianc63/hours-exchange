@@ -41,9 +41,6 @@ class SiteOffersController extends BaseController {
 
 		$transaction = new Transaction;
 		$transaction->setTransaction('offer', $offer, Sentry::getUser()->getId(), $offer->author->id, $demand);
-
-        $transaction->transactionable->remaining -= $demand;
-        $transaction->transactionable->save();
         
 		if($subject != '') {
 

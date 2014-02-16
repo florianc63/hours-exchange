@@ -4,6 +4,8 @@
 
 		{{ Form::hidden('entry_id', $entry->id) }}	
 
+		<h3>Bid for this request:</h3>
+
 		<div class="form-group">
 	        {{ Form::label('price', 'Hours', array('class' => 'col-lg-3 control-label')) }}
 			<div class="col-lg-3">

@@ -12,6 +12,8 @@
 
 		{{ Form::hidden('entry_id', $entry->id) }}	
 
+		<h3>If you want this you can pay now:</h3>
+		
 		<div class="form-group">
 	        {{ Form::label('demand', 'Quantity', array('class' => 'col-lg-3 control-label')) }}
 			<div class="col-lg-3">
