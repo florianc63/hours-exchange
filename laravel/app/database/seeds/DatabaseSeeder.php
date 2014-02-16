@@ -43,6 +43,14 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('MessagesTableSeeder');
 		$this->command->info('Messages table seeded!');
+
+		$this->call('BidsTableSeeder');
+		$this->command->info('Bids table seeded!');
+
+		$this->call('TransactionsTableSeeder');
+		$this->command->info('Transactions table seeded!');
+
+
 	}
 
 }
