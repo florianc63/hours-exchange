@@ -37,9 +37,6 @@ class DatabaseSeeder extends Seeder {
 		
 		$this->call('ServiceuserTableSeeder');
 		$this->command->info('User Services table seeded!');
-		
-		$this->call('SettingsTableSeeder');
-		$this->command->info('Settings table seeded!');
 
 		$this->call('MessagesTableSeeder');
 		$this->command->info('Messages table seeded!');
@@ -50,6 +47,8 @@ class DatabaseSeeder extends Seeder {
 		$this->call('TransactionsTableSeeder');
 		$this->command->info('Transactions table seeded!');
 
+		$this->call('SettingsTableSeeder');
+		$this->command->info('Settings table seeded!');
 
 	}
 
