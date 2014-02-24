@@ -19,18 +19,28 @@
 	<h2>{{ $user->first_name }} {{ $user->last_name }}'s Profile</h2>
 
 	<dl class="dl-horizontal">
-		<dt>About me: </dt><dd>{{ $user->details->descr }}</dd>
-		<dt>Mobile: </dt><dd>{{ $user->details->mobile }}</dd>
-	 	<dt>Adress: </dt><dd>{{ $user->details->address }}</dd>
-	 	<dt>City: </dt><dd>{{ $user->details->city }}</dd>
-	 	<dt>Country: </dt><dd>{{ $user->details->country }}</dd>
-	 	<dt>LinkedIn Profile:</dt><dd>{{ $user->details->linkedin }}</dd>
-	 	<dt>Job: </dt><dd>{{ $user->details->job_status }}</dd>
+		<dt>About me: </dt>
+		<dd>{{ $user->details->descr }}</dd>
+		<dt>Mobile: </dt>
+		<dd>{{ $user->details->mobile }}</dd>
+	 	<dt>Adress: </dt>
+	 	<dd>{{ $user->details->address }}</dd>
+	 	<dt>City: </dt>
+	 	<dd>{{ $user->details->city }}</dd>
+	 	<dt>Province: </dt>
+	 	<dd>{{ $user->details->province }}</dd>
+	 	<dt>Country: </dt>
+	 	<dd>{{ $user->details->country }}</dd>
+	 	<dt>LinkedIn Profile:</dt>
+	 	<dd>{{ $user->details->linkedin }}</dd>
+	 	<dt>Job: </dt>
+	 	<dd>{{ $user->details->job_status }}</dd>
 	</dl>
 
 	<h4>Send a message to {{ $user->first_name }}:</h4>
 
 	@if ( Sentry::check() )
+
 	{{ Form::open(array('route' => array('message'), 'class' => 'form-horizontal')) }}
 
 		{{ Form::hidden('user_id', $user->id) }}

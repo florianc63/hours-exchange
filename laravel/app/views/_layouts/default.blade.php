@@ -267,7 +267,7 @@
 
 								<li {{ (Request::is('admin/users/show/' . Sentry::getUser()->id) ? 'class="active"' : '') }}>
 
-									<a href="{{ URL::to('admin/users/show/'.Sentry::getUser()->id) }}">Account</a></li>
+									<!-- <a href="{{-- URL::to('admin/users/show/'.Sentry::getUser()->id) --}}">Account</a></li> -->
 
 								<li><a href="{{ URL::to('admin/users/logout') }}">Logout</a></li>
 
@@ -285,21 +285,7 @@
 
 						</ul>											
 
-					</div>
-
-					<!--
-
-					<div class="col-lg-1 col-lg-offset-5 text-center">
-
-						<a href="">Log In</a>
-
-					</div>
-
--->
-
-
-
-					
+					</div>					
 
 				</div>
 

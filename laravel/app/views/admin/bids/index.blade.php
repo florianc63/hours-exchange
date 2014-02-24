@@ -26,8 +26,10 @@ My bids
  	<div class="col-xs-9">
 	 	<span><strong>Bid for request: </strong></span><a href="{{{ URL::route('request', $entry->hx_request->slug) }}}"><span>{{ $entry->hx_request->title }}</span></a>
 	 	<dl class="dl-horizontal">
-	 		<dt>Bet Value:</dt>
+	 		<dt>Bid Value:</dt>
 	 		<dd>{{ $entry->value }} hours</dd>
+	 		<dt>Made on:</dt>
+	 		<dd>{{ date('Y-M-d', strtotime($entry->created_at)) }}</dd>
 	 	</dl>
 	 	</div>
  	<div class="clearfix"></div>

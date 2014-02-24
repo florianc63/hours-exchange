@@ -55,7 +55,8 @@ class SiteOffersController extends BaseController {
 
 		Session::flash('success', 'The hours were reserved. ' . $message_status);
 
-		return Redirect::route('user.profile', array('id' => $offer->author->id));
+		return Redirect::back()->withInput();
+		// return Redirect::route('user.profile', array('id' => $offer->author->id));
 	}
 
 }

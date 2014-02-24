@@ -42,6 +42,12 @@
 
 <div class="form-group">
 	<div class="col-lg-offset-3 col-lg-9">
+		<a class="btn btn-success btn-large" href="{{ URL::route('admin.user.login') }}">Login</a>
+	</div>
+</div>
+
+<div class="form-group">
+	<div class="col-lg-offset-3 col-lg-9">
 		<a class="btn btn-success btn-large" href="{{ URL::route('admin.user.register') }}">Register</a>
 	</div>
 </div>
