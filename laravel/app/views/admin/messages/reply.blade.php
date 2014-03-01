@@ -22,6 +22,7 @@ Reply
 {{ Form::open(array('route' => array('admin.messages.reply.send'), 'class' => 'form-horizontal')) }}
 
 	{{ Form::hidden('id', $id) }}
+	{{ Form::hidden('previous_url', $previous_url) }}
 
 	<div class="form-group">
         {{ Form::label('subject', 'Subject', array('class' => 'col-lg-3 control-label')) }}

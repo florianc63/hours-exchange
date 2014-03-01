@@ -28,9 +28,7 @@
 
 	<h5>Posted at {{ Carbon\Carbon::createFromTimestamp(strtotime($entry->created_at))->toFormattedDateString() }} &bull; by <a href="{{ URL::route('user.profile', array('id' => $entry->author->id)) }}">{{{ $entry->author->first_name }}} {{{ $entry->author->last_name }}}</a></h5>
 
-	<p>Available: <strong>{{{ $entry->remaining }}}</strong></p>
-
-	
+	<p>Available: <strong>{{{ $entry->remaining }}}</strong></p>	
 
 	@if ($entry->image != '')
 
@@ -44,7 +42,9 @@
 
 	</div>
 
-	<h4>Buyers:</h4>
+	@include('users.pay_now')
+
+	<h3>Buyers:</h3>
 	@if(count($transactions) >= 1)
 		@foreach ($transactions as $transaction)
 			<p><strong>{{ $transaction->buyer->first_name }} {{ $transaction->buyer->last_name }}</strong> has paid <strong>{{ $transaction->value }}</strong> hours on {{ date('Y-M-d', strtotime($transaction->created_at)) }}</p>
@@ -52,6 +52,5 @@
 	@else
 		<p>Nobody paid for this offer yet.</p>
 	@endif
-	@include('users.pay_now')
 
 @stop

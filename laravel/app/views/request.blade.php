@@ -36,10 +36,12 @@
 
 	@include('users.bid')
 
+	<h3>Pending Bids:</h3>
 	@foreach ($bids as $bid)
  	<div class="col-xs-9">
-	 	<span><strong>Bid by:</strong></span><span> {{ $bid->user->first_name }} {{ $bid->user->last_name }}</span>
 	 	<dl class="dl-horizontal">
+	 		<dt>Bid by:</dt>
+	 		<dd><a href="{{ URL::route('user.profile', array('id' => $bid->user->id)) }}">{{ $bid->user->first_name }} {{ $bid->user->last_name }}</a></dd>
 	 		<dt>Offers to do job for:</dt>
 	 		<dd>{{ $bid->value }} hours</dd>
 	 	</dl>

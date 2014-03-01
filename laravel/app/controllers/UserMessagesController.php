@@ -40,7 +40,9 @@ class UserMessagesController extends BaseController {
 
     public function getReply($id) {
 
-    	return \View::make('admin.messages.reply')->with('id', $id);
+    	$previous_url = URL::previous();
+    	
+    	return \View::make('admin.messages.reply')->with(array('id' => $id, 'previous_url' => $previous_url));
     }
 
     public function postReply() {
@@ -64,7 +66,7 @@ class UserMessagesController extends BaseController {
 		if( is_null($message) )
 			App::abort('404');
 		else
-			return Redirect::back()->withInput()->withErrors($message->errors());
+			return Redirect::to(Input::get('previous_url'));
     }
 
 	public function destroy($id)

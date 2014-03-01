@@ -16,7 +16,7 @@ class MessagesController extends BaseController {
 		if( is_null($message) )
 			App::abort('404');
 		else
-			return Redirect::route('user.profile', array('id' => $user_id));
+			return Redirect::back()->withInput();
     }
 
 }
