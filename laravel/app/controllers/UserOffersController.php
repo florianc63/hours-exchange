@@ -19,11 +19,7 @@ class UserOffersController extends BaseController {
 		foreach($entries as $entry) {
 
 			$transactions = Transaction::where('transactionable_type', '=', 'offer')->where('transactionable_id', '=', $entry->id)->get();
-			if(count($transactions) > 0) {
-				$entry->payments = count($transactions);
-			} else {
-				$entry->payments = 'No payments yet';
-			}
+			$entry->payments = count($transactions);
 		}
 
 		return \View::make('admin.offers.index')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));

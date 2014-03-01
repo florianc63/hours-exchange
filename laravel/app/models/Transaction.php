@@ -25,6 +25,11 @@ class Transaction extends Elegant {
         return $this->morphMany('Message', 'messageable');
     }
 
+    public function buyer()
+    {
+        return $this->belongsTo('User', 'buyer_id');
+    }
+
     public function setTransaction($entity_type, $entity_id, $buyer_id, $seller_id, $value) {
 
         $this->transactionable_type  = $entity_type;

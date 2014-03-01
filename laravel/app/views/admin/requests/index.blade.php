@@ -44,7 +44,7 @@ Admin Requests
 					</th>
 					<!-- <th>By</th> -->
 					<th>Bids</th>
-					<th><span class="glyphicon glyphicon-cog"></span></th>
+					<th><span class="glyphicon glyphicon-cog"></span> Options</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -55,7 +55,11 @@ Admin Requests
 						<td>{{ $entry->service->name }}</td>					
 						<td>{{ $entry->created_at }}</td>
 						<!-- <td>{{-- $entry->author->email --}}</td> -->
-						<td>{{ $entry->bids }}</td>
+						@if ($entry->bids > 0)
+						<td>{{ $entry->bids }} <a href="{{ URL::route('admin.requests.show', $entry->id) }}">(View bids)</a></td>
+						@else
+						<td>No bids yet</td>
+						@endif
 						<td>
 							<a href="{{ URL::route('admin.requests.edit', $entry->id) }}" class="btn btn-success btn-sm pull-left">Edit</a>							
 							{{ Form::open(array('route' => array('admin.requests.destroy', $entry->id), 'method' => 'delete', 'data-confirm' => 'Are you sure?', 'class' => 'form-inline')) }}

@@ -19,11 +19,7 @@ class UserRequestsController extends BaseController {
 		foreach($entries as $entry) {
 
 			$bids = Bid::where('request_id', '=', $entry->id)->get();
-			if(count($bids) > 0) {
-				$entry->bids = count($bids);
-			} else {
-				$entry->bids = 'No bids yet';
-			}
+			$entry->bids = count($bids);
 		}
 
 		return \View::make('admin.requests.index')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));

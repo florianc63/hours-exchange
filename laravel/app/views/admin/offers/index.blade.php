@@ -44,7 +44,9 @@ Admin Offers
 					</th>
 					<!-- <th>By</th> -->
 					<th>Payments</th>
-					<th><span class="glyphicon glyphicon-cog"></span></th>
+					<th>Sold</th>
+					<th>Available</th>
+					<th><span class="glyphicon glyphicon-cog"></span> Options</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -55,7 +57,13 @@ Admin Offers
 						<td>{{ $entry->service->name }}</td>
 						<td>{{ $entry->created_at }}</td>
 						<!-- <td>{{-- $entry->author->email --}}</td> -->
-						<td>{{ $entry->payments }}</td>
+						@if ($entry->payments > 0)
+						<td>{{ $entry->payments }} <a href="{{ URL::route('admin.offers.show', $entry->id) }}">(View payments)</a></td>
+						@else
+						<td>No payments yet</td>
+						@endif
+						<td>{{ $entry->qty - $entry->remaining }} ({{ ($entry->qty - $entry->remaining)*$entry->price}})</td>
+						<td>{{ $entry->remaining }}</td>
 						<td>
 							<a href="{{ URL::route('admin.offers.edit', $entry->id) }}" class="btn btn-success btn-sm pull-left">Edit</a>							
 							{{ Form::open(array('route' => array('admin.offers.destroy', $entry->id), 'method' => 'delete', 'data-confirm' => 'Are you sure?', 'class' => 'form-inline')) }}

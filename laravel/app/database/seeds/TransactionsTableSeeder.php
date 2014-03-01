@@ -21,10 +21,10 @@ class TransactionsTableSeeder extends Seeder {
 		Transaction::create(array(
 						'id' => 2,
 						'transactionable_type' => 'offer',
-						'transactionable_id' => 2,
+						'transactionable_id' => 3,
 						'buyer_id' => 2,
 						'seller_id' => 3,
-						'value' => 2,
+						'value' => 2.5,
 						'created_at' => Carbon\Carbon::now()->subWeek(),
 						'updated_at' => Carbon\Carbon::now()->subWeek(),
 		));

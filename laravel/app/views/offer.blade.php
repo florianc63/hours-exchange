@@ -44,6 +44,14 @@
 
 	</div>
 
+	<h4>Buyers:</h4>
+	@if(count($transactions) >= 1)
+		@foreach ($transactions as $transaction)
+			<p><strong>{{ $transaction->buyer->first_name }} {{ $transaction->buyer->last_name }}</strong> has paid <strong>{{ $transaction->value }}</strong> hours on {{ date('Y-M-d', strtotime($transaction->created_at)) }}</p>
+		@endforeach
+	@else
+		<p>Nobody paid for this offer yet.</p>
+	@endif
 	@include('users.pay_now')
 
 @stop

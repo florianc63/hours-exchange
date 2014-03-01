@@ -12,15 +12,16 @@ class SiteOffersController extends BaseController {
 
 		return \View::make('offers')->with(array('entries' => $entries, 'sort' => $sort, 'order' => $order));
     }
-	
+
     public function getOffer($slug)
     {
-		$offer = Offer::where('slug', $slug)->first();
-		
+		$offer 	 	  = Offer::where('slug', $slug)->first();
+		$transactions = Transaction::where('transactionable_type', 'offer')->where('transactionable_id', $offer->id)->get();
+
 		if( is_null($offer) )
 			App::abort('404');
 		else
-			return View::make('offer')->with('entry', $offer);
+			return View::make('offer')->with(array('entry' => $offer, 'transactions' => $transactions));
     }
 
 
