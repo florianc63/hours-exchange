@@ -19,6 +19,8 @@ Show Request
 		<dd>{{{ $request->author->email }}}</dd>
 		<dt>Title</dt>
 		<dd>{{{ $request->title }}}</dd>
+		<dt>Status:</dt>
+ 		<dd>{{{ $request->status }}}</dd>
 		<dt>Slug</dt>
 		<dd>{{{ $request->slug }}}</dd>
 		<dt>Body</dt>
@@ -44,11 +46,17 @@ Show Request
 
  	@foreach ($bids as $bid)
  	<div class="col-xs-9">
-	 	<span><strong>Bid by:</strong></span><span> <a href="{{ URL::route('user.profile', array('id' => $bid->user->id)) }}">{{ $bid->user->first_name }} {{ $bid->user->last_name }}</a></span>
-	 	<p><a href="{{ URL::route('accept.bid', $bid->id) }}" class="btn btn-success btn-sm">Accept bid</a></p>
 	 	<dl class="dl-horizontal">
+	 		<dt><h4>Bid by:</h4></dt>
+	 		<dd><h4><a href="{{ URL::route('user.profile', array('id' => $bid->user->id)) }}">{{ $bid->user->first_name }} {{ $bid->user->last_name }}</a></h4></dd>
+		 	@if ($bid->status == 'pending')
+	 		<dt>&nbsp;</dt>
+	 		<dd><a href="{{ URL::route('accept.bid', $bid->id) }}" class="btn btn-success btn-sm">Accept bid</a></dd>
+	 		@endif
 	 		<dt>Offers to do job for:</dt>
-	 		<dd>{{ $bid->value }} hours</dd>	 		
+	 		<dd>{{ $bid->value }} hours</dd>
+	 		<dt>Status:</dt>
+	 		<dd>{{ $bid->status }}</dd>
 	 		@foreach ($bid->message_collection as $message)
 		 		<dt>{{ $bid->user->first_name }} says:</dt>
 		 		<dd>{{ $message->subject }}</dd>

@@ -24,7 +24,8 @@ class CreateRequestsTable extends Migration {
 			$table->dateTime('date_expire');
             $table->string('location');
             $table->string('image')->nullable();            
-			$table->string('visible', 3);			
+			$table->string('visible', 3);
+			$table->string('status');
             $table->timestamps();
 		});
 	}

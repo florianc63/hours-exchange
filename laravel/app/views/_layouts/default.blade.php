@@ -265,9 +265,13 @@
 
 								<li class="xnavbar-text">{{ Sentry::getUser()->email }}</li>
 
-								<li {{ (Request::is('admin/users/show/' . Sentry::getUser()->id) ? 'class="active"' : '') }}>
+								<li><strong>Balance:</strong> {{ User::find(Sentry::getUser()->id)->details->balance }}</li>
 
-									<!-- <a href="{{-- URL::to('admin/users/show/'.Sentry::getUser()->id) --}}">Account</a></li> -->
+								<!--
+								<li {{-- (Request::is('admin/users/show/' . Sentry::getUser()->id) ? 'class="active"' : '') --}}>
+									<a href="{{-- URL::to('admin/users/show/'.Sentry::getUser()->id) --}}">Account</a>
+								</li>
+								-->
 
 								<li><a href="{{ URL::to('admin/users/logout') }}">Logout</a></li>
 

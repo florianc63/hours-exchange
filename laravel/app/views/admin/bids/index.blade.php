@@ -24,10 +24,13 @@ My bids
 
 	@foreach ($entries as $entry)
  	<div class="col-xs-9">
-	 	<span><strong>Bid for request: </strong></span><a href="{{{ URL::route('request', $entry->hx_request->slug) }}}"><span>{{ $entry->hx_request->title }}</span></a>
 	 	<dl class="dl-horizontal">
+	 		<dt><h4>Bid for request:</h4></dt>
+	 		<dd><h4><a href="{{{ URL::route('request', $entry->hx_request->slug) }}}">{{ $entry->hx_request->title }}</a></h4></dd>
 	 		<dt>Bid Value:</dt>
 	 		<dd>{{ $entry->value }} hours</dd>
+	 		<dt>Status:</dt>
+	 		<dd>{{ $entry->status }}</dd>
 	 		<dt>Made on:</dt>
 	 		<dd>{{ date('Y-M-d', strtotime($entry->created_at)) }}</dd>
 	 	</dl>

@@ -40,8 +40,8 @@
 	@foreach ($bids as $bid)
  	<div class="col-xs-9">
 	 	<dl class="dl-horizontal">
-	 		<dt>Bid by:</dt>
-	 		<dd><a href="{{ URL::route('user.profile', array('id' => $bid->user->id)) }}">{{ $bid->user->first_name }} {{ $bid->user->last_name }}</a></dd>
+	 		<dt><h4>Bid by:</h4></dt>
+	 		<dd><h4><a href="{{ URL::route('user.profile', array('id' => $bid->user->id)) }}">{{ $bid->user->first_name }} {{ $bid->user->last_name }}</a></h4></dd>
 	 		<dt>Offers to do job for:</dt>
 	 		<dd>{{ $bid->value }} hours</dd>
 	 	</dl>

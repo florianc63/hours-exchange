@@ -15,7 +15,7 @@ class SiteRequestsController extends BaseController {
 	
     public function getRequest($slug)
     {
-		$request = HxRequest::where('slug', $slug)->first();
+		$request = HxRequest::where('slug', $slug)->where('status', 'active')->first();
 		$bids 	 = Bid::where('request_id', '=', $request->id)->get();
 
 		foreach($bids as $bid) {
@@ -61,6 +61,7 @@ class SiteRequestsController extends BaseController {
 		$transaction = new Transaction;
 		$transaction->setTransaction('request', $bid->request_id, $bid->buyer_id, $bid->seller_id, $bid->value);
 
+		$transaction->resolveRequest($bid);
 		// to do: close request after bid is accepted
 		Session::flash('success', 'Bid accepted.');
 

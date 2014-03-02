@@ -19,6 +19,7 @@ class CreateBidsTable extends Migration {
 			$table->integer('buyer_id');
 			$table->integer('seller_id');
 			$table->float('value');
+			$table->string('status');
 			$table->timestamps();
 		});
 	}

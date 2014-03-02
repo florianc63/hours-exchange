@@ -72,6 +72,7 @@ class UserRequestsController extends BaseController {
 			$request->location   	        = Input::get('location');
 			$request->image   	          	= $image;
 			$request->visible   	        = 'yes';
+			$request->status 				= 'active';
 			$request->save();		
 			 
 			Session::flash('success', 'Entry saved successfully.');

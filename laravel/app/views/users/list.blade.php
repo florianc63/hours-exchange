@@ -17,8 +17,7 @@ Users
 	<h2>Users</h2>
 
 	@foreach ($users as $user)
-	 	@if ($users != $user->hasAccess('admin'))
-	 	
+
 		<div class="row">
 			<div class="col-lg-9">
 				<h3><a href="{{ URL::route('user.profile', array('id' => $user->id)) }}">{{{ $user->first_name }}} {{{ $user->last_name }}}</a></h3>
@@ -35,7 +34,6 @@ Users
 			</div>
 		</div>
 
-		@endif
 	@endforeach
 
 @stop

@@ -18,6 +18,7 @@ class CreateUserdetailsTable extends Migration {
 			$table->string('type', 20)->default('free');
 			$table->string('first_name', 100);
 			$table->string('last_name', 100);
+			$table->float('balance')->default(0);
 			$table->string('mobile', 50);
 			$table->string('address', 250);
 			$table->text('descr')->nullable();

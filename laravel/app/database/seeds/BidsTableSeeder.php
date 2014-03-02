@@ -14,6 +14,7 @@ class BidsTableSeeder extends Seeder {
 				'buyer_id' 		=> 3,
 				'seller_id' 	=> 2,
 				'value' 		=> 2,
+				'status'		=> 'pending',
 				'created_at' 	=> Carbon\Carbon::now()->subWeek(),
 				'updated_at' 	=> Carbon\Carbon::now()->subWeek(),
 		));
@@ -23,6 +24,7 @@ class BidsTableSeeder extends Seeder {
 				'buyer_id' 		=> 2,
 				'seller_id' 	=> 3,
 				'value' 		=> 4,
+				'status'		=> 'pending',
 				'created_at' 	=> Carbon\Carbon::now()->subWeek(),
 				'updated_at' 	=> Carbon\Carbon::now()->subWeek(),
 		));
@@ -32,6 +34,7 @@ class BidsTableSeeder extends Seeder {
 				'buyer_id' 		=> 2,
 				'seller_id' 	=> 3,
 				'value' 		=> 3,
+				'status'		=> 'pending',
 				'created_at' 	=> Carbon\Carbon::now()->subWeek(),
 				'updated_at' 	=> Carbon\Carbon::now()->subWeek(),
 		));

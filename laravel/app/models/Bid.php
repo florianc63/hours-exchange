@@ -13,6 +13,7 @@ class Bid extends Elegant {
         'buyer_id'    => 'required',
         'seller_id'   => 'required',
         'value'       => 'required|numeric',
+        'status'      => 'required|in:declined, pending, accepted',
     );
 
     public function messages()
@@ -31,6 +32,7 @@ class Bid extends Elegant {
         $this->buyer_id   = $request->author->id;
         $this->seller_id  = Sentry::getUser()->getId();
         $this->value      = $price;
+        $this->status     = 'pending';
         $this->save();
 
         return $this;

@@ -189,6 +189,7 @@ class UserController extends BaseController {
 				$user_details->descr		    = Input::get('descr');
 				$user_details->city		        = Input::get('city');
 				$user_details->postal		    = Input::get('postal');
+				$user_details->balance			+= 5;
 				$user_details->save();
 				
 				// Save user services
@@ -236,7 +237,7 @@ class UserController extends BaseController {
 		        
 		    	//Add this person to the user group. 
 		    	$userGroup = Sentry::getGroupProvider()->findById(2);
-		    	$user->addGroup($userGroup);
+		    	$user->addGroup($userGroup);	    	
 
 		        Session::flash('success', 'Your account has been activated. <a href="/admin/users/login">Click here</a> to log in.');
 				return Redirect::to('/');
@@ -993,9 +994,7 @@ class UserController extends BaseController {
 
 	public function getUsers() {
 
-		$users = User::all();
-		// $sort  = Input::get('sort');
-		// $order = Input::get('order');
+		$users = User::where('first_name', '!=', 'Admin')->where('id', '!=', Sentry::getUser()->getId())->paginate(10);
 
 		return \View::make('users.list')->with(array('users' => $users));
 	}

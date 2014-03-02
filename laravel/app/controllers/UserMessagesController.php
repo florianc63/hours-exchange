@@ -73,7 +73,7 @@ class UserMessagesController extends BaseController {
 	{
 		$message = Message::find($id);	
 		$message->delete();
-	 
+
 		Session::flash('success', 'Entry deleted successfully.');
 
 		return Redirect::route('admin.messages.index');

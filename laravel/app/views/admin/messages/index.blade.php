@@ -25,7 +25,7 @@ Inbox
 	@foreach ($inbox as $received)
 	<div class="col-xs-12">
 		<dl class="dl-horizontal">
-			<dt>&nbsp;</dt>
+			<dt><h4>Subject:</h4></dt>
 			<dd><h4><a href="{{ URL::route('admin.messages.show', $received->id) }}">{{ $received->subject }}</a></h4></dd>
 			<dt>From:</dt>
 			<dd><a href="{{ URL::route('user.profile', $received->user->id) }}">{{ $received->user->first_name }} {{ $received->user->last_name }}</a></dd>
@@ -53,7 +53,7 @@ Inbox
 
 	<div class="col-xs-12">
 		<dl class="dl-horizontal">
-			<dt>&nbsp;</dt>
+			<dt><h4>Subject:</h4></dt>
 			<dd><h4><a href="{{ URL::route('admin.messages.show', $sent->id) }}">{{ $sent->subject }}</a></h4></dd>
 			<dt>To:</dt>
 			<dd><a href="{{ URL::route('user.profile', $sent->user_to->id) }}">{{ $sent->user_to->first_name }} {{ $sent->user_to->last_name }}</a></dd>

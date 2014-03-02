@@ -18,14 +18,11 @@ Requests
 
 @section('content')
 
- 
-
 	<h2>Requests</h2>
-
- 	
 
 	@foreach ($entries as $entry)
 
+		@if($entry->status == 'active')
 		<div class="row">
 			<div class="col-lg-3">
 				@if ($entry->image != '')
@@ -44,10 +41,8 @@ Requests
 			</div>
 
 		</div>
-
+		@endif
 	@endforeach
-
-		
 
 	{{ $entries->addQuery('order',$order)->addQuery('sort', $sort)->links() }}
 

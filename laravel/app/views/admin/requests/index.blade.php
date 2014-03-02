@@ -32,6 +32,7 @@ Admin Requests
 							<span class="glyphicon glyphicon-chevron-down"></span>
 						</a>
 					</th>
+					<th>Status</th>
 					<th>Category</th>
 					<th>
 						Posted					
@@ -52,6 +53,7 @@ Admin Requests
 					<tr>
 						<td>{{ $entry->id }}</td>
 						<td><a href="{{ URL::route('admin.requests.show', $entry->id) }}">{{ $entry->title }}</a></td>
+						<td>{{ $entry->status }}</td>
 						<td>{{ $entry->service->name }}</td>					
 						<td>{{ $entry->created_at }}</td>
 						<!-- <td>{{-- $entry->author->email --}}</td> -->

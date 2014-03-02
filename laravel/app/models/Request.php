@@ -15,7 +15,8 @@ class Request extends Elegant {
 		'price'        => array('required', 'regex:/^[0-9]*(\.[0-9]+)?$/'),
         'date_expire'  => 'required|date',
         'location'     => 'required|min:3',
-        'image'        => 'image|max:3000'
+        'image'        => 'image|max:3000',
+        'status'       => 'required|in: active, resolved',
     );	
 
     public function author()
@@ -50,10 +51,6 @@ class Request extends Elegant {
             return \HxRequest::where('user_id', $user_id)->orderBy($sort, $order)->paginate(5);
         else
             return \HxRequest::orderBy($sort, $order)->paginate(5);
-
-        
-
-
     }
 
 }

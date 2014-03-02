@@ -46,8 +46,10 @@ Show offer
 
 	@foreach ($transactions as $transaction)
  	<div class="col-xs-9">
-	 	<span><strong>Payment by:</strong></span><span> <a href="{{ URL::route('user.profile', array('id' => $transaction->user->id)) }}">{{ $transaction->user->first_name }} {{ $transaction->user->last_name }}</a></span>
+	 	<span><strong></strong></span><span> </span>
 	 	<dl class="dl-horizontal">
+	 		<dt><h4>Payment by:</h4></dt>
+	 		<dd><h4><a href="{{ URL::route('user.profile', array('id' => $transaction->user->id)) }}">{{ $transaction->user->first_name }} {{ $transaction->user->last_name }}</a></h4></dd>
 	 		<dt>Has paid:</dt>
 	 		<dd>{{ $transaction->value }} hours</dd>
 	 		@foreach ($transaction->message_collection as $message)

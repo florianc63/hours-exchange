@@ -27,11 +27,25 @@ class SiteOffersController extends BaseController {
 
     public function postPayNow() {
 		
-		$offer 		 = Offer::find(Input::get('entry_id'));
-		$demand 	 = Input::get('demand') * $offer->price;
-		$subject 	 = Input::get('subject');
-		$body 		 = Input::get('body');
+		$offer 		 	= Offer::find(Input::get('entry_id'));
+		$demand 	 	= Input::get('demand') * $offer->price;
+		$subject 	 	= Input::get('subject');
+		$body 		 	= Input::get('body');
 		$message_status = 'No message was sent.';
+
+		$user_balance 	= User::find(Sentry::getUser()->id)->details->balance;
+		$balance_after_transaction = $user_balance - Input::get('demand') * $offer->price;
+
+		if ($user_balance < 0) {
+
+			Session::flash('error', 'You cannot pay because your balance is negative. Do some work first.');
+			return Redirect::back()->withInput();
+
+		} elseif ($balance_after_transaction < 0) {
+
+			Session::flash('error', "You cannot pay because this transaction will result in a negative balance for you.<br /> You wanted to pay: " . Input::get('demand') * $offer->price . ', resulting balance would be: ' . $balance_after_transaction);
+			return Redirect::back()->withInput();
+		}
 
 		if($offer->remaining - $demand < 0) {
 
