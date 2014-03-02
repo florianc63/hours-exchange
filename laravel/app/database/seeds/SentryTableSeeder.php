@@ -25,10 +25,10 @@ class SentryTableSeeder extends Seeder {
             'activated'   => 1,
         ));
         Sentry::getUserProvider()->create(array(
-            'email'       => 'traian.cazacu@gmail.com',
+            'email'       => 'harry.vogel@gmail.com',
             'password'    => "123456",
-            'first_name'  => 'Traian',
-            'last_name'   => 'Cazacu',
+            'first_name'  => 'Harry',
+            'last_name'   => 'Vogel',
             'activated'   => 1,
         ));
  
@@ -54,7 +54,7 @@ class SentryTableSeeder extends Seeder {
         $user  = Sentry::getUserProvider()->findByLogin('gus@kodewebsites.com');
         $user->addGroup($group);
 		
-        $user  = Sentry::getUserProvider()->findByLogin('traian.cazacu@gmail.com');
+        $user  = Sentry::getUserProvider()->findByLogin('harry.vogel@gmail.com');
         $user->addGroup($group);
 	}
 }
