@@ -17,6 +17,7 @@ class UserdetailsTableSeeder extends Seeder {
         UserDetail::create(array(
 				'first_name' => 'Gus',
 				'last_name'  => 'Mun',
+				'city'		 => 'Toronto',
 				'balance'	 => 3.5,
 				'user_id'    => 2,
 				'created_at' => Carbon\Carbon::now(),
@@ -25,6 +26,7 @@ class UserdetailsTableSeeder extends Seeder {
         UserDetail::create(array(
 				'first_name' => 'Traian',
 				'last_name'  => 'Cazacu',
+				'city'		 => 'Vancouver',
 				'balance'	 => -2,
 				'user_id'    => 3,
 				'created_at' => Carbon\Carbon::now(),

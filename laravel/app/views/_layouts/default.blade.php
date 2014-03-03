@@ -265,7 +265,7 @@
 
 								<li class="xnavbar-text">{{ Sentry::getUser()->email }}</li>
 
-								<li><strong>Balance:</strong> {{ User::find(Sentry::getUser()->id)->details->balance }}</li>
+								<li><strong>Balance:</strong> {{ User::find(Sentry::getUser()->id)->details->balance }} hours</li>
 
 								<!--
 								<li {{-- (Request::is('admin/users/show/' . Sentry::getUser()->id) ? 'class="active"' : '') --}}>

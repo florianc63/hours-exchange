@@ -23,14 +23,12 @@ Users
 				<h3><a href="{{ URL::route('user.profile', array('id' => $user->id)) }}">{{{ $user->first_name }}} {{{ $user->last_name }}}</a></h3>
 				<h5>Member since: {{ date('Y-M-d', strtotime($user->created_at)) }} &bull;</h5>
 				<dl class="dl-horizontal">
-					<p><strong>City:</strong> {{ $user->details->city }}</p>
-					<p><strong>Province:</strong> {{ $user->details->province }}</p>
-					<p><strong>Country:</strong> {{ $user->details->country }}</p>
-				 	<h5><strong>Services:</strong></h5>
+					<p><strong>From:</strong> {{ $user->details->city }} ({{ $user->details->country }})</p>
+				 	<h5><strong>Offers:</strong></h5>
 				 	@foreach( $user->services as $service )
 				 		<ul>{{ $service->name }}</ul>
 				 	@endforeach
-				</dl>			 
+				</dl>
 			</div>
 		</div>
 

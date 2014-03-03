@@ -50,16 +50,10 @@
 
 @else
 
-<div class="form-group">
-	<div class="col-lg-offset-3 col-lg-9">
-		<a class="btn btn-success btn-large" href="{{ URL::route('admin.user.login') }}">Login</a>
-	</div>
-</div>
-
-<div class="form-group">
-	<div class="col-lg-offset-3 col-lg-9">
-		<a class="btn btn-success btn-large" href="{{ URL::route('admin.user.register') }}">Register</a>
-	</div>
+<div class="alert alert-warning alert-block">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	<h4>If you want to buy this please <a href="{{ URL::route('admin.user.login') }}">login</a> or <a href="{{ URL::route('admin.user.register') }}">register</a>.</h4>
+	
 </div>
 
 @endif

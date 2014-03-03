@@ -994,7 +994,7 @@ class UserController extends BaseController {
 
 	public function getUsers() {
 
-		$users = User::where('first_name', '!=', 'Admin')->where('id', '!=', Sentry::getUser()->getId())->paginate(10);
+		$users = User::where('first_name', '!=', 'Admin')->paginate(10);
 
 		return \View::make('users.list')->with(array('users' => $users));
 	}

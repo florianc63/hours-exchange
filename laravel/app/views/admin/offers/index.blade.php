@@ -62,7 +62,7 @@ Admin Offers
 						@else
 						<td>No payments yet</td>
 						@endif
-						<td>{{ $entry->qty - $entry->remaining }} ({{ ($entry->qty - $entry->remaining)*$entry->price}})</td>
+						<td>{{ $entry->qty - $entry->remaining }} ({{ ($entry->qty - $entry->remaining)*$entry->price}} h)</td>
 						<td>{{ $entry->remaining }}</td>
 						<td>
 							<a href="{{ URL::route('admin.offers.edit', $entry->id) }}" class="btn btn-success btn-sm pull-left">Edit</a>							

@@ -71,7 +71,8 @@
 
 	@else
 
-		<div class="alert alert-danger alert-block">
+		<div class="alert alert-warning alert-block">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
 			<h4>You must be logged on to send a message to {{ $user->first_name }}</h4>
 		</div>
 
